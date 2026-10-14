@@ -5,6 +5,9 @@
 
 /* ---- CSS Variables / Design Tokens ---- */
 :root {
+    --primary-color: #174D35;
+    --accent-color: #174D35;
+    --secondary-color: #C5A15A;
     --ash-deep-green: #174D35;
     --ash-leaf-green: #39744B;
     --ash-warm-ivory: #FAF7EF;
@@ -14,6 +17,61 @@
     --ash-green-dark: #0f3524;
     --ash-white: #ffffff;
     --ash-font-tamil: 'Noto Sans Tamil', sans-serif;
+}
+
+/* ---- Font Awesome 6 Local Webfonts Declarations ---- */
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../webfonts/fa-brands-400.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('../webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../webfonts/fa-solid-900.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url('../webfonts/fa-regular-400.woff2') format('woff2'),
+         url('../webfonts/fa-regular-400.ttf') format('truetype');
+}
+
+.fa, .fas, .fa-solid {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+}
+
+.far, .fa-regular {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 400 !important;
+}
+
+.fab, .fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+}
+
+/* ---- Cursor Bug Fix: Suppress stray cursor element ---- */
+.cb-cursor,
+.cb-cursor:before,
+.cb-cursor-text {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
 /* ---- Tamil Font Support ---- */
@@ -144,45 +202,83 @@ body {
 .hero-contact-quick {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 15px 20px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.15);
+    gap: 16px;
+    padding: 16px 20px;
+    background: rgba(15, 53, 36, 0.72);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 161, 90, 0.35);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.hero-contact-quick:hover {
+    background: rgba(15, 53, 36, 0.92);
+    border-color: var(--ash-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .hero-contact-quick .icon-box {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
     border-radius: 50%;
-    background: var(--ash-gold);
+    background: linear-gradient(135deg, var(--ash-gold), var(--ash-gold-light));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--ash-charcoal);
-    font-size: 18px;
+    color: var(--ash-charcoal) !important;
+    font-size: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(197, 161, 90, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-contact-quick .icon-box.whatsapp-badge {
+    background: #25D366;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
 }
 
 .hero-contact-quick-content p {
-    color: rgba(255,255,255,0.7);
-    margin: 0;
+    color: rgba(250, 247, 239, 0.85);
+    margin: 0 0 3px 0;
     font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 .hero-contact-quick-content h3 {
     margin: 0;
     font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
 }
 
 .hero-contact-quick-content h3 a {
-    color: var(--ash-white);
+    color: var(--ash-white) !important;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .hero-contact-quick-content h3 a:hover {
-    color: var(--ash-gold);
+    color: var(--ash-gold) !important;
+}
+
+.hero-contact-quick-content .whatsapp-action-link {
+    color: var(--ash-white) !important;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.hero-contact-quick:hover .whatsapp-action-link {
+    color: #25D366 !important;
 }
 
 .whatsapp-hero-btn {
@@ -226,7 +322,39 @@ body {
 }
 
 .service-item-royal .icon-box {
-    background: var(--ash-deep-green) !important;
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    border-radius: 16px;
+    background: rgba(23, 77, 53, 0.08) !important;
+    border: 1px solid rgba(23, 77, 53, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.35s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.service-item-royal .icon-box img {
+    width: 36px;
+    height: 36px;
+    max-width: 36px;
+    object-fit: contain;
+    filter: none;
+    transition: all 0.35s ease;
+}
+
+.service-item-royal:hover .icon-box {
+    background: var(--ash-gold) !important;
+    border-color: var(--ash-gold) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item-royal:hover .icon-box img {
+    filter: brightness(0) invert(1) !important;
 }
 
 .readmore-btn {
@@ -243,7 +371,36 @@ body {
 }
 
 .feature-item-royal .icon-box {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 14px;
+    background: rgba(23, 77, 53, 0.08) !important;
+    border: 1px solid rgba(23, 77, 53, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.feature-item-royal .icon-box img {
+    width: 32px;
+    height: 32px;
+    max-width: 32px;
+    object-fit: contain;
+    filter: none;
+    transition: all 0.3s ease;
+}
+
+.feature-item-royal:hover .icon-box {
     background: var(--ash-deep-green) !important;
+    border-color: var(--ash-deep-green) !important;
+    transform: scale(1.05);
+}
+
+.feature-item-royal:hover .icon-box img {
+    filter: brightness(0) invert(1) !important;
 }
 
 /* ---- Qualifications Section ---- */
@@ -281,8 +438,8 @@ body {
 }
 
 .qualification-icon {
-    width: 70px;
-    height: 70px;
+    width: 72px;
+    height: 72px;
     margin: 0 auto 20px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--ash-deep-green), var(--ash-leaf-green));
@@ -291,6 +448,15 @@ body {
     justify-content: center;
     color: var(--ash-white);
     font-size: 28px;
+    box-shadow: 0 8px 20px rgba(23, 77, 53, 0.2);
+    transition: all 0.35s ease;
+}
+
+.qualification-card:hover .qualification-icon {
+    transform: scale(1.08) rotate(4deg);
+    background: linear-gradient(135deg, var(--ash-gold), var(--ash-gold-light));
+    color: var(--ash-charcoal);
+    box-shadow: 0 10px 25px rgba(197, 161, 90, 0.35);
 }
 
 .qualification-card h3 {
@@ -332,18 +498,307 @@ body {
     font-size: 13px;
 }
 
-/* ---- FAQ Section ---- */
+/* ============================================
+   ---- FAQ Section Complete Luxury Redesign ----
+   ============================================ */
 .our-faqs-royal {
     background-color: var(--ash-warm-ivory);
+    padding: 100px 0;
 }
 
-.accordion-button:not(.collapsed) {
-    background: var(--ash-deep-green) !important;
-    color: var(--ash-white) !important;
+/* Left Card: Deep Emerald Showcase */
+.faqs-content-box-royal {
+    background: linear-gradient(145deg, #103B28 0%, #174D35 60%, #0B2A1C 100%) !important;
+    border: 1px solid rgba(197, 161, 90, 0.35) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 20px 50px rgba(16, 59, 40, 0.18) !important;
+    padding: 48px 42px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    height: 100%;
 }
 
-.accordion-button:focus {
-    box-shadow: 0 0 0 0.15rem rgba(23, 77, 53, 0.25) !important;
+.faqs-content-box-royal .section-sub-title {
+    display: inline-flex !important;
+    align-items: center;
+    color: var(--ash-gold) !important;
+    background: rgba(197, 161, 90, 0.15) !important;
+    border: 1px solid rgba(197, 161, 90, 0.35) !important;
+    padding: 8px 22px 8px 34px !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.8px !important;
+    width: fit-content;
+    position: relative !important;
+}
+
+.faqs-content-box-royal .section-sub-title::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 15px !important;
+    transform: translateY(-50%) !important;
+    background: var(--ash-gold) !important;
+    border-radius: 50% !important;
+    width: 7px !important;
+    height: 7px !important;
+    box-shadow: 0 0 6px rgba(197, 161, 90, 0.7) !important;
+}
+
+.faqs-content-box-royal .section-title h2 {
+    color: #FFFFFF !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin: 18px 0 !important;
+}
+
+.faqs-content-box-royal .section-title p {
+    color: rgba(250, 247, 239, 0.85) !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0 !important;
+}
+
+.faqs-content-btn-royal .btn-default {
+    background: var(--ash-gold) !important;
+    border: none !important;
+    color: #174D35 !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    padding: 16px 28px 16px 60px !important;
+    border-radius: 100px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
+    position: relative !important;
+    display: inline-block !important;
+    transition: all 0.35s ease !important;
+    line-height: 1.1 !important;
+}
+
+.faqs-content-btn-royal .btn-default::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 8px !important;
+    width: 38px !important;
+    height: 38px !important;
+    transform: translateY(-50%) !important;
+    background-color: #FFFFFF !important;
+    border-radius: 50% !important;
+    background-image: url('../images/arrow-primary.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 14px auto !important;
+    transition: all 0.4s ease-in-out !important;
+}
+
+.faqs-content-btn-royal .btn-default:hover {
+    background: #e2c589 !important;
+    color: #174D35 !important;
+    padding: 16px 60px 16px 28px !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(197, 161, 90, 0.4) !important;
+}
+
+.faqs-content-btn-royal .btn-default:hover::before {
+    left: calc(100% - 46px) !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+}
+
+.faqs-contact-list-royal {
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding-top: 26px !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.faqs-contact-item-royal {
+    position: relative;
+    width: calc(50% - 15px);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.faqs-contact-item-royal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background: rgba(255, 255, 255, 0.15) !important;
+    width: 1px;
+    height: 100%;
+}
+
+.faqs-contact-item-royal:last-child::before {
+    display: none;
+}
+
+.faqs-contact-item-royal .icon-box {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    border-radius: 50% !important;
+    background: rgba(197, 161, 90, 0.16) !important;
+    border: 1.5px solid rgba(197, 161, 90, 0.4) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    transition: all 0.35s ease !important;
+}
+
+.faqs-contact-item-royal .icon-box i {
+    color: var(--ash-gold) !important;
+    font-size: 18px !important;
+    transition: color 0.3s ease !important;
+}
+
+.faqs-contact-item-royal:hover .icon-box {
+    background: var(--ash-gold) !important;
+    border-color: var(--ash-gold) !important;
+    transform: scale(1.08);
+}
+
+.faqs-contact-item-royal:hover .icon-box i {
+    color: #103B28 !important;
+}
+
+.faqs-contact-item-content-royal p {
+    color: rgba(250, 247, 239, 0.75) !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin: 0 0 3px 0 !important;
+}
+
+.faqs-contact-item-content-royal h3 {
+    margin: 0 !important;
+    font-size: 16px !important;
+    font-weight: 700;
+}
+
+.faqs-contact-item-content-royal h3 a {
+    color: #FFFFFF !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.faqs-contact-item-content-royal h3 a:hover {
+    color: var(--ash-gold) !important;
+}
+
+/* Right Column: Pristine Luxury Accordion */
+.faq-accordion-royal,
+.faq-accordion {
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    justify-content: center;
+}
+
+.faq-accordion-royal .accordion-item,
+.faq-accordion .accordion-item {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(23, 77, 53, 0.12) !important;
+    border-radius: 16px !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0 4px 20px rgba(23, 77, 53, 0.04) !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+}
+
+.faq-accordion-royal .accordion-item:hover,
+.faq-accordion .accordion-item:hover {
+    border-color: rgba(197, 161, 90, 0.55) !important;
+    box-shadow: 0 8px 25px rgba(23, 77, 53, 0.08) !important;
+    transform: translateY(-2px);
+}
+
+/* Accordion Header / Button - Collapsed */
+.faq-accordion-royal .accordion-header .accordion-button,
+.faq-accordion .accordion-header .accordion-button {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    background: #FFFFFF !important;
+    color: var(--ash-deep-green) !important;
+    padding: 20px 65px 20px 26px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease-in-out !important;
+    position: relative;
+}
+
+/* Accordion Header / Button - Expanded */
+.faq-accordion-royal .accordion-item .accordion-button:not(.collapsed),
+.faq-accordion .accordion-item .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #174D35 0%, #205E41 100%) !important;
+    color: #FFFFFF !important;
+    border-radius: 16px 16px 0 0 !important;
+    box-shadow: none !important;
+}
+
+/* Custom Vector Plus Icon (No square □ glyphs!) */
+.faq-accordion-royal .accordion-item .accordion-button::after,
+.faq-accordion-royal .accordion-item .accordion-button.collapsed::after,
+.faq-accordion .accordion-item .accordion-button::after,
+.faq-accordion .accordion-item .accordion-button.collapsed::after {
+    content: '' !important;
+    position: absolute !important;
+    right: 22px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    border-radius: 50% !important;
+    background-color: rgba(23, 77, 53, 0.08) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23174D35' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: all 0.35s ease-in-out !important;
+    font-family: inherit !important;
+}
+
+.faq-accordion-royal .accordion-item:hover .accordion-button.collapsed::after,
+.faq-accordion .accordion-item:hover .accordion-button.collapsed::after {
+    background-color: var(--ash-gold) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+/* Custom Vector Minus Icon (Expanded) */
+.faq-accordion-royal .accordion-button:not(.collapsed)::after,
+.faq-accordion .accordion-button:not(.collapsed)::after {
+    background-color: rgba(255, 255, 255, 0.22) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transform: translateY(-50%) rotate(180deg) !important;
+}
+
+/* Accordion Body */
+.faq-accordion-royal .accordion-item .accordion-body,
+.faq-accordion .accordion-item .accordion-body {
+    background-color: #FFFFFF !important;
+    padding: 22px 26px 26px !important;
+    border-top: 1px solid rgba(23, 77, 53, 0.08) !important;
+}
+
+.faq-accordion-royal .accordion-item .accordion-body p,
+.faq-accordion .accordion-item .accordion-body p {
+    color: #4A524D !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin: 0 !important;
 }
 
 /* ---- Location Section ---- */
@@ -375,10 +830,24 @@ body {
 }
 
 .ash-location-item i {
-    font-size: 22px;
+    font-size: 20px;
+    color: var(--ash-deep-green);
+    background: rgba(197, 161, 90, 0.2);
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ash-location-item:hover i {
+    background: var(--ash-deep-green);
     color: var(--ash-gold);
-    min-width: 30px;
-    margin-top: 3px;
 }
 
 .ash-location-item h3 {
@@ -666,3 +1135,138 @@ html {
     border-color: var(--ash-gold) !important;
     box-shadow: 0 0 0 0.15rem rgba(197, 161, 90, 0.25) !important;
 }
+
+/* ============================================
+   ---- Services Grid Spacing & Card Polish ----
+   ============================================ */
+.our-services .row {
+    row-gap: 36px !important;
+}
+
+.our-services .service-item {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background: #FFFFFF !important;
+    border-radius: 20px !important;
+    padding: 24px !important;
+    border: 1px solid rgba(23, 77, 53, 0.1) !important;
+    box-shadow: 0 6px 24px rgba(23, 77, 53, 0.05) !important;
+    transition: all 0.35s ease !important;
+    margin-bottom: 0 !important;
+}
+
+.our-services .service-item:hover {
+    border-color: rgba(197, 161, 90, 0.6) !important;
+    box-shadow: 0 16px 40px rgba(23, 77, 53, 0.12) !important;
+    transform: translateY(-6px);
+}
+
+.our-services .service-featured-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    background: #f0ede4;
+}
+
+.our-services .service-featured-image figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our-services .service-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.our-services .service-item:hover .service-featured-image img {
+    transform: scale(1.06);
+}
+
+.our-services .service-item-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    justify-content: space-between !important;
+}
+
+.our-services .service-item-content {
+    margin-bottom: 24px !important;
+}
+
+.our-services .service-item-content h2 {
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    color: var(--ash-deep-green) !important;
+    line-height: 1.35 !important;
+    margin-bottom: 12px !important;
+}
+
+.our-services .service-item-content p {
+    color: #555A57 !important;
+    font-size: 14.5px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0 !important;
+}
+
+.our-services .service-item-btn {
+    margin-top: auto !important;
+    padding-top: 8px !important;
+}
+
+.our-services .service-item-btn .btn-default {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 14px 24px 14px 54px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    background: var(--ash-deep-green) !important;
+    color: #FFFFFF !important;
+    border-radius: 100px !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(23, 77, 53, 0.2) !important;
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    transition: all 0.35s ease !important;
+}
+
+.our-services .service-item-btn .btn-default::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 6px !important;
+    width: 34px !important;
+    height: 34px !important;
+    transform: translateY(-50%) !important;
+    background-color: #FFFFFF !important;
+    border-radius: 50% !important;
+    background-image: url('../images/arrow-primary.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 12px auto !important;
+    transition: all 0.35s ease !important;
+}
+
+.our-services .service-item-btn .btn-default:hover {
+    background: var(--ash-gold) !important;
+    color: var(--ash-charcoal) !important;
+    padding: 14px 54px 14px 24px !important;
+    box-shadow: 0 8px 20px rgba(197, 161, 90, 0.35) !important;
+}
+
+.our-services .service-item-btn .btn-default:hover::before {
+    left: calc(100% - 40px) !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+}
+

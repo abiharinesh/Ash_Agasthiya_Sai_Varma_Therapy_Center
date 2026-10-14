@@ -123,5 +123,6 @@ class Cursor {
         this.visibleInt = setTimeout(() => this.visible = false, this.options.visibleTimeout);
     }
 }
-// Init cursor
-const cursor = new Cursor();
+// Init cursor (disabled to prevent stray dot artifact and restore native smooth cursor)
+// const cursor = new Cursor();
+
