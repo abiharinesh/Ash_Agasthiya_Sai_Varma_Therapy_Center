@@ -307,50 +307,64 @@ body {
 
 /* ---- Services Section ---- */
 .our-services-royal.light-section {
-    background-color: var(--ash-white);
+    background-color: var(--ash-warm-ivory) !important;
 }
 
 .service-item-royal {
-    border-color: rgba(23, 77, 53, 0.1) !important;
-    transition: all 0.4s ease;
+    background: #FFFFFF !important;
+    border: 1px solid rgba(23, 77, 53, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 36px 30px !important;
+    box-shadow: 0 4px 20px rgba(23, 77, 53, 0.04) !important;
+    transition: all 0.4s ease !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.service-item-royal::before,
+.service-item-royal:hover::before {
+    display: none !important;
+    content: none !important;
 }
 
 .service-item-royal:hover {
-    border-color: var(--ash-gold) !important;
-    box-shadow: 0 15px 40px rgba(23, 77, 53, 0.12);
+    border-color: rgba(197, 161, 90, 0.55) !important;
+    box-shadow: 0 16px 40px rgba(23, 77, 53, 0.1) !important;
     transform: translateY(-5px);
 }
 
 .service-item-royal .icon-box {
-    width: 68px;
-    height: 68px;
-    min-width: 68px;
-    border-radius: 16px;
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    max-width: 68px !important;
+    border-radius: 16px !important;
     background: rgba(23, 77, 53, 0.08) !important;
-    border: 1px solid rgba(23, 77, 53, 0.12);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    transition: all 0.35s ease;
-    position: relative;
-    z-index: 2;
+    border: 1.5px solid rgba(23, 77, 53, 0.12) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 24px !important;
+    transition: all 0.35s ease !important;
+    position: relative !important;
+    z-index: 2 !important;
+    overflow: hidden !important;
 }
 
 .service-item-royal .icon-box img {
-    width: 36px;
-    height: 36px;
-    max-width: 36px;
-    object-fit: contain;
-    filter: none;
-    transition: all 0.35s ease;
+    width: 36px !important;
+    height: 36px !important;
+    max-width: 36px !important;
+    object-fit: contain !important;
+    filter: none !important;
+    transition: all 0.35s ease !important;
 }
 
 .service-item-royal:hover .icon-box {
     background: var(--ash-gold) !important;
     border-color: var(--ash-gold) !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(197, 161, 90, 0.35) !important;
 }
 
 .service-item-royal:hover .icon-box img {
@@ -1020,24 +1034,158 @@ body {
     font-size: 22px;
 }
 
-/* ---- Header Button Area ---- */
+/* ========================================================
+   NAVIGATION STYLING: DESKTOP & MOBILE (SLICKNAV)
+   ======================================================== */
+
+/* ---- Desktop Navigation Active State ---- */
+.main-menu ul li a {
+    color: var(--ash-white) !important;
+    font-weight: 500 !important;
+    padding: 8px 14px !important;
+    transition: color 0.3s ease, border-color 0.3s ease !important;
+    position: relative;
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li a:focus {
+    color: var(--ash-gold) !important;
+}
+
+.main-menu ul li a.active,
+.main-menu ul li.active > a {
+    color: var(--ash-gold) !important;
+    font-weight: 700 !important;
+    position: relative;
+}
+
+.main-menu ul li a.active::after,
+.main-menu ul li.active > a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+    right: 10px;
+    height: 3px;
+    background: var(--ash-gold);
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(197, 161, 90, 0.5);
+}
+
+/* Desktop Hide Highlighted-Menu (since desktop has .header-btn button) */
+@media (min-width: 992px) {
+    .main-menu ul li.highlighted-menu {
+        display: none !important;
+    }
+}
+
+/* ---- Header Button Area (Desktop) ---- */
 .header-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-/* ---- Highlighted Nav Menu ---- */
-.highlighted-menu .nav-link {
-    background: var(--ash-gold) !important;
-    color: var(--ash-charcoal) !important;
-    border-radius: 6px !important;
-    padding: 8px 18px !important;
-    font-weight: 600 !important;
+/* ---- Mobile Slide Bar (SlickNav) Menu ---- */
+.slicknav_menu {
+    background: #0d2b1d !important;
+    border-bottom: 2px solid rgba(197, 161, 90, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    padding: 10px 0 !important;
 }
 
-.highlighted-menu .nav-link:hover {
-    background: var(--ash-gold-light) !important;
+.slicknav_nav {
+    margin: 0 !important;
+    padding: 8px 0 !important;
+}
+
+.slicknav_nav li {
+    margin: 2px 0 !important;
+}
+
+/* Normal Mobile Nav Links */
+.slicknav_nav li a,
+.slicknav_nav .slicknav_row {
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 11px 22px !important;
+    transition: all 0.25s ease !important;
+    background: transparent !important;
+    border-left: 4px solid transparent !important;
+    border-radius: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    text-transform: capitalize !important;
+}
+
+.slicknav_nav li a:hover,
+.slicknav_nav li a:focus {
+    color: var(--ash-gold) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    padding-left: 26px !important;
+}
+
+/* ACTIVE PAGE in Mobile Slide Bar (Clearly highlights whichever page is selected) */
+.slicknav_nav li:not(.highlighted-menu) a.active,
+.slicknav_nav li:not(.highlighted-menu).active > a {
+    color: #ffd700 !important;
+    background: rgba(197, 161, 90, 0.16) !important;
+    font-weight: 700 !important;
+    border-left: 5px solid var(--ash-gold) !important;
+    padding-left: 26px !important;
+}
+
+.slicknav_nav li:not(.highlighted-menu) a.active::after,
+.slicknav_nav li:not(.highlighted-menu).active > a::after {
+    content: '● Current';
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--ash-gold);
+    background: rgba(197, 161, 90, 0.18);
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(197, 161, 90, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Book Appointment CTA Button inside Mobile Menu (Separated, clean button style) */
+.slicknav_nav li.highlighted-menu {
+    margin: 14px 18px 8px 18px !important;
+    padding-top: 14px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.slicknav_nav li.highlighted-menu a.nav-link {
+    background: linear-gradient(135deg, #c5a15a 0%, #a88338 100%) !important;
+    color: #0b1e16 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    letter-spacing: 0.8px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    border-left: none !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+}
+
+.slicknav_nav li.highlighted-menu a.nav-link::after {
+    display: none !important;
+}
+
+.slicknav_nav li.highlighted-menu a.nav-link:hover,
+.slicknav_nav li.highlighted-menu a.nav-link:focus {
+    background: linear-gradient(135deg, #d4af37 0%, #c5a15a 100%) !important;
+    color: #05100c !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+    padding-left: 20px !important;
 }
 
 /* ---- Why Choose / Qualifications Light Section ---- */

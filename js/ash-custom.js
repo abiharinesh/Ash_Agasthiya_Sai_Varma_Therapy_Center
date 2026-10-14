@@ -210,12 +210,57 @@
         });
     }
 
+    // ---- Active Navigation Link Sync ----
+    function syncActiveNavLinks() {
+        var pathname = window.location.pathname || '';
+        var filename = pathname.split('/').pop().split('?')[0].split('#')[0];
+        if (!filename || filename === '' || filename === 'index.html' || filename === 'index-3.html') {
+            filename = 'index.html';
+        }
+
+        function checkMatch(href) {
+            if (!href) return false;
+            var linkFile = href.split('/').pop().split('?')[0].split('#')[0];
+            if (filename === 'index.html') {
+                return linkFile === '' || linkFile === 'index.html' || linkFile === 'index-3.html' || href === '/';
+            }
+            return linkFile === filename;
+        }
+
+        // Desktop links
+        $('#menu > li:not(.highlighted-menu) > a').each(function () {
+            var href = $(this).attr('href');
+            if (checkMatch(href)) {
+                $(this).addClass('active');
+                $(this).closest('li').addClass('active');
+            } else {
+                $(this).removeClass('active');
+                $(this).closest('li').removeClass('active');
+            }
+        });
+
+        // Mobile SlickNav links
+        $('.slicknav_nav li:not(.highlighted-menu) a').each(function () {
+            var href = $(this).attr('href');
+            if (checkMatch(href)) {
+                $(this).addClass('active');
+                $(this).closest('li').addClass('active');
+            } else {
+                $(this).removeClass('active');
+                $(this).closest('li').removeClass('active');
+            }
+        });
+    }
+
     // ---- Initialize on DOM Ready ----
     $(document).ready(function () {
         initAppointmentForms();
         initLanguageSwitcher();
         initPopups();
         initScrollTop();
+        syncActiveNavLinks();
+        setTimeout(syncActiveNavLinks, 150);
+        setTimeout(syncActiveNavLinks, 500);
     });
 
 })(jQuery);
