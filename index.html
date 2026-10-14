@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
-<!-- Mirrored from https://html.awaikenthemes.com/revoza/ by HTTrack Website Copier/3.x [XR&CO], Wed, 14 Oct 2026 08:22:00 GMT -->
+<html lang="en">
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+	<meta name="description" content="Discover traditional Varma Kalai, Thokkanam, massage, meditation, and wellness services at Ash Agasthiya Sai Varma Therapy Center in Vilathikulam, Tamil Nadu. Contact us to enquire about appointments.">
+	<meta name="keywords" content="Ash Agasthiya Sai Varma Therapy Center, Agathiya Sai Healing, Varma Kalai, Thokkanam, traditional massage, meditation, yoga, Tamil wellness, Vilathikulam, Thoothukudi">
+	<meta name="author" content="Ash Agasthiya Sai Varma Therapy Center">
+	<!-- Open Graph -->
+	<meta property="og:title" content="Ash Agasthiya Sai Varma Therapy Center | Traditional Wellness">
+	<meta property="og:description" content="Traditional Varma Kalai, Thokkanam, massage, meditation, and wellness services in Vilathikulam, Tamil Nadu.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ashagasthiyasai.com">
+	<meta property="og:image" content="images/hero-bg-ash.jpg">
 	<!-- Page Title -->
-    <title>Revoza - Spa and Wellness Center HTML Template</title>
+    <title>Ash Agasthiya Sai Varma Therapy Center | Traditional Wellness</title>
 	<!-- Favicon Icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <!-- Google Fonts Css-->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<!-- Bootstrap Css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- SlickNav Css -->
@@ -34,6 +39,51 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<!-- ASH Custom Overrides -->
+	<link href="css/ash-custom.css" rel="stylesheet" media="screen">
+
+	<!-- LocalBusiness Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Ash Agasthiya Sai Varma Therapy Center",
+		"alternateName": "ASH அகத்திய சாய் வர்மா சிகிச்சை மையம்",
+		"description": "Traditional Varma Kalai, Thokkanam, massage, meditation, and wellness services.",
+		"url": "https://ashagasthiyasai.com",
+		"telephone": ["+917304603707", "+917904454096"],
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "206/2, SMPT Illam, Nedungulam Road, Kankappillai Valasai",
+			"addressLocality": "Vilathikulam",
+			"addressRegion": "Tamil Nadu",
+			"postalCode": "627803",
+			"addressCountry": "IN"
+		},
+		"areaServed": "Thoothukudi District, Tamil Nadu",
+		"serviceType": ["Varma Kalai", "Thokkanam", "Traditional Massage", "Meditation", "Yoga", "Spiritual Wellness"],
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+				"opens": "08:30",
+				"closes": "13:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+				"opens": "16:00",
+				"closes": "20:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": "Sunday",
+				"opens": "08:30",
+				"closes": "13:00"
+			}
+		]
+	}
+	</script>
 </head>
 <body>
 
@@ -41,19 +91,20 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt="Loading"></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
 
     <!-- Header Start -->
-	<header class="main-header">
+	<header class="main-header" id="main-header">
 		<div class="header-sticky">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
+					<a class="navbar-brand ash-logo-text" href="index.html">
+						<span class="ash-logo-main">ASH</span>
+						<span class="ash-logo-sub">Agathiya Sai Healing</span>
 					</a>
 					<!-- Logo End -->
 
@@ -61,41 +112,26 @@
                     <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Version 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-4.html">Home - Version 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Home - Version 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team-single.html">Team Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Plan</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book An Appointment</a></li>
+                                <li class="nav-item"><a class="nav-link" href="team-single.html">Our Practitioner</a></li>
+                                <li class="nav-item"><a class="nav-link" href="image-gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faqs.html">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">Book Appointment</a></li>
                             </ul>
                         </div>
                         
-                        <!-- Header Btn Start -->
+                        <!-- Language Switcher & Header Btn -->
                         <div class="header-btn">
+                            <div class="lang-switcher" id="langSwitcher">
+                                <button class="lang-btn" data-lang="en">English</button>
+                                <span class="lang-divider">|</span>
+                                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                            </div>
                             <a href="book-appointment.html" class="btn-default btn-highlighted">Book Appointment</a>
                         </div>
-                        <!-- Header Btn End -->
                     </div>
 					<!-- Main Menu End -->
 					<div class="navbar-toggle"></div>
@@ -107,192 +143,177 @@
 	<!-- Header End -->
 
     <!-- Hero Section Start -->
-    <div class="hero dark-section parallaxie">
+    <div class="hero-royal dark-section" style="background-image: url('images/hero-bg-ash.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row">
                 <div class="col-xl-8">
                     <!-- Hero Content Start -->
-                    <div class="hero-content">
+                    <div class="hero-content-royal">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <span class="section-sub-title wow fadeInUp">Premium Spa Experience</span>
-                            <h1 class="text-anime-style-3" data-cursor="-opaque">Discover the perfect escape for relaxation and care</h1>
+                            <span class="section-sub-title wow fadeInUp" data-lang-en="Traditional Tamil Wellness" data-lang-ta="பாரம்பரிய தமிழ் நல்வாழ்வு">Traditional Tamil Wellness</span>
+                            <h1 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Traditional Tamil Wellness. A More Peaceful You." data-lang-ta="பாரம்பரிய வர்மக் கலையும், அமைதியான வாழ்விற்கான நல்வழியும்.">Traditional Tamil Wellness. A More Peaceful You.</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="Explore traditional Varma Kalai, Thokkanam, wellness massage, meditation, and yoga at Ash Agasthiya Sai Varma Therapy Center." data-lang-ta="ASH அகத்திய சாய் வர்மா சிகிச்சை மையத்தில் பாரம்பரிய வர்மக் கலை, தொக்கணம், நல்வாழ்வு மசாஜ், தியானம் மற்றும் யோகா ஆகியவற்றை அனுபவியுங்கள்.">Explore traditional Varma Kalai, Thokkanam, wellness massage, meditation, and yoga at Ash Agasthiya Sai Varma Therapy Center.</p>
                         </div>
                         <!-- Section Title End -->
-                         
-                        <!-- Hero Body Start -->
-                        <div class="hero-body wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Hero Body Start -->
-                            <div class="hero-btn">
-                                <a href="services.html" class="btn-default btn-highlighted">View All Services</a>
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body-royal wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Hero Button Start -->
+                            <div class="hero-btn-royal">
+                                <a href="book-appointment.html" class="btn-default btn-highlighted" data-lang-en="Book an Appointment" data-lang-ta="சந்திப்பை பதிவு செய்யுங்கள்">Book an Appointment</a>
                             </div>
-                            <!-- Hero Body End -->
-                            
-                            <!-- Video Play Button Start -->
-                            <div class="video-play-button" data-cursor-text="Play">
-                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-                                    <span><i class="fa-solid fa-play"></i></span>
-                                    <p>Watch Our Story</p>
-                                </a>
+                            <!-- Hero Button End -->
+
+                            <!-- Secondary CTA Start -->
+                            <div class="hero-btn-royal">
+                                <a href="services.html" class="btn-default" data-lang-en="Explore Our Services" data-lang-ta="எங்கள் சேவைகளை அறிக">Explore Our Services</a>
                             </div>
-                            <!-- Video Play Button End -->
+                            <!-- Secondary CTA End -->
                         </div>
-                        <!-- Hero Body End -->
+                        <!-- Hero Content Body End -->
                     </div>
                     <!-- Hero Content End -->
-                </div>  
-                
-                <div class="col-xl-4">
-                    <!-- Hero Info Box Start -->
-                    <div class="hero-info-box wow fadeInUp">
-                        <!-- Hero Info Client Box Start -->
-                        <div class="hero-info-client-box">
-                            <!-- Hero Info Client Content Start -->
-                            <div class="hero-info-client-content">
-                                <p>25k+ Trusted Clients</p>
-                            </div>
-                            <!-- Hero Info Client Content End -->
-
-                            <!-- Satisfy Client Images Start -->
-                            <div class="satisfy-client-images">
-                                <div class="satisfy-client-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="satisfy-client-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-2.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="satisfy-client-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-3.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="satisfy-client-image add-more">
-                                        <i class="fa fa-solid fa-plus"></i>
-                                </div>
-                            </div>
-                            <!-- Satisfy Client Images End -->
-                        </div> 
-                        <!-- Hero Info Client Box End -->
-
-                        <!-- Hero Info Review Box Start -->
-                        <div class="hero-info-review-box">
-                            <h2><span class="counter">4.8</span></h2>
-                            <p>
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                (5K Reviews)
-                            </p>
-                        </div>
-                        <!-- Hero Info Review Box End -->
-                    </div>
-                    <!-- Hero Info Box End -->
                 </div>
+
+                <div class="col-xl-4">
+                    <!-- Hero Contact Box Start -->
+                    <div class="hero-client-review-box-royal wow fadeInUp">
+                        <div class="hero-contact-quick">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="hero-contact-quick-content">
+                                <p data-lang-en="Call Us Today" data-lang-ta="இன்றே அழைக்கவும்">Call Us Today</p>
+                                <h3><a href="tel:+917304603707">73046 03707</a></h3>
+                                <h3><a href="tel:+917904454096">79044 54096</a></h3>
+                            </div>
+                        </div>
+                        <div class="hero-contact-quick" style="margin-top: 15px;">
+                            <div class="icon-box" style="background: #25D366;">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="hero-contact-quick-content">
+                                <a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20know%20more%20about%20Ash%20Agasthiya%20Sai%20Varma%20Therapy%20Center%20and%20your%20services.%20Please%20share%20the%20available%20services%2C%20fees%2C%20timings%2C%20and%20appointment%20details." class="whatsapp-hero-btn" target="_blank" rel="noopener" data-lang-en="Chat on WhatsApp" data-lang-ta="WhatsApp-ல் தொடர்புகொள்ளுங்கள்">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero Contact Box End -->
+                </div>
+            </div>
+
+            <div class="col-xl-12">
+                <!-- Hero Info Item List Start -->
+                <div class="hero-info-item-list-royal">
+                    <!-- Hero Info Item Start -->
+                    <div class="hero-info-item-royal wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="images/icon-hero-info-item-1-royal.svg" alt="Varma Kalai">
+                        </div>
+                        <div class="hero-info-item-content-royal">
+                            <h3 data-lang-en="Varma Kalai &amp; Thokkanam" data-lang-ta="வர்மக் கலை &amp; தொக்கணம்">Varma Kalai &amp; Thokkanam</h3>
+                            <p data-lang-en="Ancient Tamil healing traditions for holistic wellness and relaxation." data-lang-ta="முழுமையான நல்வாழ்வு மற்றும் ஓய்வுக்கான பண்டைய தமிழ் மருத்துவ மரபுகள்.">Ancient Tamil healing traditions for holistic wellness and relaxation.</p>
+                        </div>
+                    </div>
+                    <!-- Hero Info Item End -->
+
+                    <!-- Hero Info Item Start -->
+                    <div class="hero-info-item-royal wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="images/icon-hero-info-item-2-royal.svg" alt="Traditional Massage">
+                        </div>
+                        <div class="hero-info-item-content-royal">
+                            <h3 data-lang-en="Traditional Massage" data-lang-ta="பாரம்பரிய மசாஜ்">Traditional Massage</h3>
+                            <p data-lang-en="Relaxing wellness massage techniques rooted in Tamil tradition." data-lang-ta="தமிழ் மரபில் வேரூன்றிய ஓய்வு நல்வாழ்வு மசாஜ் நுட்பங்கள்.">Relaxing wellness massage techniques rooted in Tamil tradition.</p>
+                        </div>
+                    </div>
+                    <!-- Hero Info Item End -->
+
+                    <!-- Hero Info Item Start -->
+                    <div class="hero-info-item-royal wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="images/icon-hero-info-item-3-royal.svg" alt="Meditation & Yoga">
+                        </div>
+                        <div class="hero-info-item-content-royal">
+                            <h3 data-lang-en="Meditation &amp; Yoga" data-lang-ta="தியானம் &amp; யோகா">Meditation &amp; Yoga</h3>
+                            <p data-lang-en="Guided sessions for mindfulness, inner peace, and general well-being." data-lang-ta="மன அமைதி, உள்ளார்ந்த அமைதி மற்றும் பொதுவான நல்வாழ்வுக்கான வழிகாட்டப்பட்ட அமர்வுகள்.">Guided sessions for mindfulness, inner peace, and general well-being.</p>
+                        </div>
+                    </div>
+                    <!-- Hero Info Item End -->
+                </div>
+                <!-- Hero Info Item List End -->
             </div>
         </div>
     </div>
     <!-- Hero Section End -->
-    
+
     <!-- About Us Section Start -->
-    <div class="about-us">
+    <div class="about-us-royal" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6">
-                    <!-- About Us Content Start -->
-                    <div class="about-us-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <span class="section-sub-title wow fadeInUp">About Us</span>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Bringing our, relaxation and care together</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">We are passionate about helping people achieve a healthier and more balanced life style through professional spa treatments and holistic our therapies. Through personalized spa treatments.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- About Us Item List Start -->
-                        <div class="about-us-list wow fadeInUp" data-wow-delay="0.4s">
-                            <ul>
-                                <li>Spa treatments designed to relax your body and mind.</li>
-                                <li>A peaceful environment combined with expert care</li>
-                            </ul>   
-                        </div>
-                        <!-- About Us Item List End -->
-
-                        <!-- About Us Item List Start -->
-                        <div class="about-us-item-list wow fadeInUp">
-                            <!-- About Us Item Start -->
-                            <div class="about-us-item">
-                                <h2><span class="counter">100</span>+</h2>
-                                <p>Luxury Spa Treatments & our Services</p>
+                    <!-- About Us Image Box Start -->
+                    <div class="about-us-image-box-royal wow fadeInUp">
+                        <!-- About Us Image Box 1 Start -->
+                        <div class="about-us-image-box-1-royal">
+                            <div class="about-us-image-royal">
+                                <figure class="image-anime">
+                                    <img src="images/about-ash.jpg" alt="Traditional herbal preparations at ASH Therapy Center">
+                                </figure>
                             </div>
-                            <!-- About Us Item End -->
-
-                            <!-- About Us Item Start -->
-                            <div class="about-us-item">
-                                <h2><span class="counter">40</span>+</h2>
-                                <p>Certified our Therapists and Spa Experts</p>
+                        </div>
+                        <!-- About Us Image Box 1 End -->
+                         
+                        <!-- About Us Image Box 2 Start -->
+                        <div class="about-us-image-box-2-royal">
+                            <div class="about-us-image-royal">
+                                <figure class="image-anime">
+                                    <img src="images/varma-kalai-ash.jpg" alt="Varma Kalai traditional healing setup">
+                                </figure>
                             </div>
-                            <!-- About Us Item End -->
                         </div>
-                        <!-- About Us Item List End -->
-
-                        <!-- About Us Btn Start -->
-                        <div class="about-us-btn wow fadeInUp" data-wow-delay="0.2s">
-                            <a href="about.html" class="btn-default">More About Us</a>
-                        </div>
-                        <!-- About Us Btn Start -->
+                        <!-- About Us Image Box 2 End -->
                     </div>
-                    <!-- About Us Content End -->
+                    <!-- About Us Image Box End -->
                 </div>
 
                 <div class="col-xl-6">
-                    <!-- About Us Image Box Start -->
-                    <div class="about-us-image-box wow fadeInUp">
-                        <!-- About Us Image Box-1 Start -->
-                         <div class="about-us-image-box-1">
-                           <!-- About Us Image Start -->
-                            <div class="about-us-image-1">
-                                <figure class="image-anime">
-                                    <img src="images/about-us-image-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- About Us Image End -->
+                    <!-- About Us Content Royal Start -->
+                    <div class="about-us-content-royal">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp" data-lang-en="About Us" data-lang-ta="எங்களைப் பற்றி">About Us</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Our Tradition, Our Approach" data-lang-ta="எங்கள் மரபு, எங்கள் அணுகுமுறை">Our Tradition, Our Approach</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="Ash Agasthiya Sai Varma Therapy Center (ASH) is a traditional wellness center focused on Varma Kalai, Thokkanam, massage, meditation, yoga, and spiritual wellness practices. We honour time-tested Tamil traditions while providing personalised care in a welcoming environment." data-lang-ta="ASH அகத்திய சாய் வர்மா சிகிச்சை மையம் (ASH) என்பது வர்மக் கலை, தொக்கணம், மசாஜ், தியானம், யோகா மற்றும் ஆன்மீக நல்வாழ்வு நடைமுறைகளில் கவனம் செலுத்தும் ஒரு பாரம்பரிய நல்வாழ்வு மையமாகும்.">Ash Agasthiya Sai Varma Therapy Center (ASH) is a traditional wellness center focused on Varma Kalai, Thokkanam, massage, meditation, yoga, and spiritual wellness practices. We honour time-tested Tamil traditions while providing personalised care in a welcoming environment.</p>
+                        </div>
+                        <!-- Section Title End -->
 
-                            <!-- About Us Image Start -->
-                            <div class="about-us-image-2">
-                                <figure class="image-anime">
-                                    <img src="images/about-us-image-2.jpg" alt="">
-                                </figure>
+                        <!-- About US Body Start -->
+                        <div class="about-us-body-royal wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="about-us-item-list-royal">
+                                <div class="about-us-item-royal">
+                                    <h3 data-lang-en="Our Approach" data-lang-ta="எங்கள் அணுகுமுறை">Our Approach</h3>
+                                    <p data-lang-en="We combine respect for traditional knowledge with personalised attention, clear communication, and a calm, welcoming atmosphere for every visitor." data-lang-ta="பாரம்பரிய அறிவின் மீதான மரியாதையுடன் தனிப்பட்ட கவனம், தெளிவான தொடர்பு, மற்றும் ஒவ்வொரு பார்வையாளருக்கும் அமைதியான, வரவேற்கும் சூழலை நாங்கள் ஒருங்கிணைக்கிறோம்.">We combine respect for traditional knowledge with personalised attention, clear communication, and a calm, welcoming atmosphere for every visitor.</p>
+                                </div>
                             </div>
-                            <!-- About Us Image End -->
-                         </div>
-                         <!-- About Us Image Box-1 End -->
 
-                         <!-- About Us Image Box-2 Start -->
-                         <div class="about-us-image-box-2">
-                            <!-- About Us Image Start -->
-                            <div class="about-us-image-3">
-                                <figure class="image-anime">
-                                    <img src="images/about-us-image-3.jpg" alt="">
-                                </figure>
+                            <div class="about-us-body-list-royal">
+                                <ul>
+                                    <li data-lang-en="Rooted in Tamil Traditional Wellness" data-lang-ta="தமிழ் பாரம்பரிய நல்வாழ்வில் வேரூன்றியது">Rooted in Tamil Traditional Wellness</li>
+                                    <li data-lang-en="Personalised Care for Every Individual" data-lang-ta="ஒவ்வொரு நபருக்கும் தனிப்பட்ட கவனிப்பு">Personalised Care for Every Individual</li>
+                                </ul>
                             </div>
-                            <!-- About Us Image End -->
+                        </div>
+                        <!-- About US Body End -->
 
-                            <!-- About Us Image Start -->
-                            <div class="about-image-content">
-                                <a href="tel:123456789">Call At: +(123) 456-789</a>
-                            </div>
-                         </div>
-                         <!-- About Us Image Box-2 End -->
+                        <!-- About Us Content Button Start -->
+                        <div class="about-us-content-btn-royal wow fadeInUp" data-wow-delay="0.2s">
+                            <a href="about.html" class="btn-default" data-lang-en="More About Us" data-lang-ta="எங்களைப் பற்றி மேலும்">More About Us</a>
+                        </div>
+                        <!-- About Us Content Button End -->
                     </div>
-                    <!-- About Us Image Box End -->
+                    <!-- About Us Content Royal End -->
                 </div>
             </div>
         </div>
@@ -300,826 +321,233 @@
     <!-- About Us Section End -->
 
     <!-- Our Service Section Start -->
-    <div class="our-services light-section">
+    <div class="our-services-royal light-section" id="services">
         <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-xl-6">
+            <div class="row section-row">
+                <div class="col-xl-12">
                     <!-- Section Title Start -->
-                    <div class="section-title">
-                        <span class="section-sub-title wow fadeInUp">Our Services</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Discover our luxurious spa and our services</h2>
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp" data-lang-en="Our Services" data-lang-ta="எங்கள் சேவைகள்">Our Services</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Traditional wellness services for body, mind, and spirit" data-lang-ta="உடல், மனம் மற்றும் ஆன்மாவுக்கான பாரம்பரிய நல்வாழ்வு சேவைகள்">Traditional wellness services for body, mind, and spirit</h2>
                     </div>
                     <!-- Section Title End -->
-                </div>
-
-                <div class="col-xl-6">
-                    <!-- Section Content Btn Start -->
-                    <div class="section-content-btn">
-                        <!-- Section Title Content Start -->
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                            <p>From soothing massages to revitalizing facial treatments, our services are designed to enhance relaxation, promote healthy skin, and improve overall well-being.</p>
-                        </div>
-                        <!-- Section Title Content End -->
-                        
-                        <!-- Section Button Start -->
-                        <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="services.html" class="btn-default">View All Services</a>
-                        </div>
-                        <!-- Section Button End -->
-                    </div>
-                    <!-- Section Content Btn End -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- Service Slider Start -->
-                    <div class="service-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Service Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Service Item Start -->
-                                    <div class="service-item">
-                                        <div class="service-item-header">
-                                            <div class="service-item-number">
-                                                <h2>01</h2>
-                                            </div>
-                                            <div class="service-item-content">
-                                                <h2><a href="service-single.html">Aromatherapy Massage</a></h2>
-                                                <p>Relax your body and calm your mind with soothing massage techniques.</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-item-1.svg" alt="">
-                                        </div>
-                                        <div class="service-item-image">
-                                            <figure>
-                                                <img src="images/service-image-1.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <!-- Service Item End -->
-                                </div>
-                                <!-- Service Slide End -->
-
-                                <!-- Service Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Service Item Start -->
-                                    <div class="service-item">
-                                        <div class="service-item-header">
-                                            <div class="service-item-number">
-                                                <h2>02</h2>
-                                            </div>
-                                            <div class="service-item-content">
-                                                <h2><a href="service-single.html">Hot Stone Therapy</a></h2>
-                                                <p>Warm stones are gently placed on key points of the body to relax muscles.</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-item-2.svg" alt="">
-                                        </div>
-                                        <div class="service-item-image">
-                                            <figure>
-                                                <img src="images/service-image-2.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <!-- Service Item End -->
-                                </div>
-                                <!-- Service Slide End -->
-
-                                <!-- Service Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Service Item Start -->
-                                    <div class="service-item">
-                                        <div class="service-item-header">
-                                            <div class="service-item-number">
-                                                <h2>03</h2>
-                                            </div>
-                                            <div class="service-item-content">
-                                                <h2><a href="service-single.html">Facial Skin Treatment</a></h2>
-                                                <p>Revitalize your skin with nourishing facial therapies that cleanse & hydrate.</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-item-3.svg" alt="">
-                                        </div>
-                                        <div class="service-item-image">
-                                            <figure>
-                                                <img src="images/service-image-3.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <!-- Service Item End -->
-                                </div>
-                                <!-- Service Slide End -->
-
-                                <!-- Service Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Service Item Start -->
-                                    <div class="service-item">
-                                        <div class="service-item-header">
-                                            <div class="service-item-number">
-                                                <h2>04</h2>
-                                            </div>
-                                            <div class="service-item-content">
-                                                <h2><a href="service-single.html">Swedish Massage</a></h2>
-                                                <p>Gentle yet effective massage that enhances blood flow, relieves stress.</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-item-4.svg" alt="">
-                                        </div>
-                                        <div class="service-item-image">
-                                            <figure>
-                                                <img src="images/service-image-4.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <!-- Service Item End -->
-                                </div>
-                                <!-- Service Slide End -->
-
-                                <!-- Service Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Service Item Start -->
-                                    <div class="service-item">
-                                        <div class="service-item-header">
-                                            <div class="service-item-number">
-                                                <h2>05</h2>
-                                            </div>
-                                            <div class="service-item-content">
-                                                <h2><a href="service-single.html">Deep Tissue Massage</a></h2>
-                                                <p>Target tense muscle improve enhance with therapeutic deep tissue massage.</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-item-5.svg" alt="">
-                                        </div>
-                                        <div class="service-item-image">
-                                            <figure>
-                                                <img src="images/service-image-5.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <!-- Service Item End -->
-                                </div>
-                                <!-- Service Slide End -->
+                <div class="col-xl-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item-royal wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="images/icon-service-1-royal.svg" alt="Varma Kalai">
+                        </div>
+                        <div class="service-item-body-royal">
+                            <div class="service-item-content-royal">
+                                <h2><a href="services.html" data-lang-en="Traditional Varma Kalai" data-lang-ta="பாரம்பரிய வர்மக் கலை">Traditional Varma Kalai</a></h2> 
+                                <p data-lang-en="An ancient Tamil practice focusing on vital energy points. This traditional system aims to support general wellness through specialised techniques." data-lang-ta="முக்கிய ஆற்றல் புள்ளிகளில் கவனம் செலுத்தும் பண்டைய தமிழ் நடைமுறை. இந்த பாரம்பரிய முறை சிறப்பு நுட்பங்கள் மூலம் பொதுவான நல்வாழ்வை ஆதரிக்க முயற்சிக்கிறது.">An ancient Tamil practice focusing on vital energy points. This traditional system aims to support general wellness through specialised techniques.</p>
                             </div>
-                            <div class="service-pagination"></div>
+                            <div class="service-item-btn-royal">
+                                <a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20enquire%20about%20Varma%20Kalai%20services." class="readmore-btn" target="_blank" rel="noopener" data-lang-en="Enquire on WhatsApp" data-lang-ta="WhatsApp-ல் விசாரிக்கவும்">Enquire on WhatsApp</a>
+                            </div>
                         </div>
                     </div>
-                    <!-- Service Slider End -->
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item-royal wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="images/icon-service-2-royal.svg" alt="Thokkanam Massage">
+                        </div>
+                        <div class="service-item-body-royal">
+                            <div class="service-item-content-royal">
+                                <h2><a href="services.html" data-lang-en="Thokkanam &amp; Traditional Massage" data-lang-ta="தொக்கணம் &amp; பாரம்பரிய மசாஜ்">Thokkanam &amp; Traditional Massage</a></h2> 
+                                <p data-lang-en="Traditional Tamil massage techniques intended for relaxation and general wellness. Suitability depends on individual circumstances." data-lang-ta="ஓய்வு மற்றும் பொதுவான நல்வாழ்வுக்கான பாரம்பரிய தமிழ் மசாஜ் நுட்பங்கள். தகுதி தனிநபர் சூழ்நிலைகளைப் பொறுத்தது.">Traditional Tamil massage techniques intended for relaxation and general wellness. Suitability depends on individual circumstances.</p>
+                            </div>
+                            <div class="service-item-btn-royal">
+                                <a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20enquire%20about%20Thokkanam%20massage%20services." class="readmore-btn" target="_blank" rel="noopener" data-lang-en="Enquire on WhatsApp" data-lang-ta="WhatsApp-ல் விசாரிக்கவும்">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item-royal wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="images/icon-service-3-royal.svg" alt="Meditation Yoga">
+                        </div>
+                        <div class="service-item-body-royal">
+                            <div class="service-item-content-royal">
+                                <h2><a href="services.html" data-lang-en="Meditation &amp; Yoga" data-lang-ta="தியானம் &amp; யோகா">Meditation &amp; Yoga</a></h2> 
+                                <p data-lang-en="Guided sessions focused on relaxation, mindfulness, and general well-being. Suitable for beginners and experienced practitioners alike." data-lang-ta="ஓய்வு, நிதானம் மற்றும் பொதுவான நல்வாழ்வில் கவனம் செலுத்தும் வழிகாட்டப்பட்ட அமர்வுகள். தொடக்கநிலையினருக்கும் அனுபவமுள்ளவர்களுக்கும் ஏற்றது.">Guided sessions focused on relaxation, mindfulness, and general well-being. Suitable for beginners and experienced practitioners alike.</p>
+                            </div>
+                            <div class="service-item-btn-royal">
+                                <a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20enquire%20about%20Meditation%20and%20Yoga%20sessions." class="readmore-btn" target="_blank" rel="noopener" data-lang-en="Enquire on WhatsApp" data-lang-ta="WhatsApp-ல் விசாரிக்கவும்">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
                 </div>
 
                 <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
                     <div class="section-footer-text section-satisfy-img wow fadeInUp">
-                        <ul class="section-footer-border-list">
-                            <li>Trusted By <b>40,000+</b> Users</li>
-                            <li>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <b><span class="counter">4.9</span>/5</b>
-                            </li>
-                        </ul>
-
-                        <!-- Satisfy Client Images Start -->
-                        <div class="satisfy-client-images">
-                            <div class="satisfy-client-image">
-                                <figure class="image-anime">
-                                    <img src="images/author-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="satisfy-client-image add-more">
-                                <img src="images/icon-phone-white.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- Satisfy Client Images End -->
-                        <p>Let's make something great work together. <a href="contact.html">Get Free Quote</a></p>                     
+                        <p data-lang-en="We offer a range of traditional wellness services. " data-lang-ta="நாங்கள் பல்வேறு பாரம்பரிய நல்வாழ்வு சேவைகளை வழங்குகிறோம். ">We offer a range of traditional wellness services. <a href="services.html" data-lang-en="View all our services." data-lang-ta="எங்கள் அனைத்து சேவைகளையும் காணுங்கள்.">View all our services.</a></p>                     
                     </div>
-                    <!-- Section Footer Text End -->
                 </div>
             </div>
         </div>
     </div>
     <!-- Our Service Section End -->
 
-    <!-- Why Choose Us Section Start -->
-    <div class="why-choose-us">
+    <!-- Why Choose Us / Our Approach Section Start -->
+    <div class="our-feature-royal" id="approach">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6">
-                    <!-- Why Choose Image Box Start -->
-                    <div class="why-choose-image-box wow fadeInUp">
-                        <!-- Why Choose Image Box-1 Start -->
-                        <div class="why-choose-image-box-1">
-                            <!-- Why Choose Image Start -->
-                            <div class="why-choose-image">
-                                <figure class="image-anime">
-                                    <img src="images/why-choose-image-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Why Choose Image End -->
+                    <!-- Feature Content Start -->
+                    <div class="feature-content-royal">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp" data-lang-en="Our Traditional Approach" data-lang-ta="எங்கள் பாரம்பரிய அணுகுமுறை">Our Traditional Approach</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Rooted in ancient Tamil wisdom and care" data-lang-ta="பண்டைய தமிழ் ஞானத்திலும் அக்கறையிலும் வேரூன்றியது">Rooted in ancient Tamil wisdom and care</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="We bring together traditional Varma Kalai knowledge, Thokkanam massage techniques, and spiritual wellness practices to offer a personalised approach to traditional wellness." data-lang-ta="பாரம்பரிய வர்மக் கலை அறிவு, தொக்கணம் மசாஜ் நுட்பங்கள் மற்றும் ஆன்மீக நல்வாழ்வு நடைமுறைகளை ஒருங்கிணைத்து பாரம்பரிய நல்வாழ்வுக்கான தனிப்பட்ட அணுகுமுறையை வழங்குகிறோம்.">We bring together traditional Varma Kalai knowledge, Thokkanam massage techniques, and spiritual wellness practices to offer a personalised approach to traditional wellness.</p>
+                        </div>
+                        <!-- Section Title End -->
 
-                            <!-- Why Choose CTA Box Start -->
-                            <div class="why-choose-cta-box">
+                        <!-- Feature Item List Start -->
+                        <div class="feature-item-list-royal">
+                            <div class="feature-item-royal wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="icon-box">
-                                    <img src="images/icon-why-choose-cta-box.svg" alt="">
+                                    <img src="images/icon-core-feature-1-royal.svg" alt="Traditional Knowledge">
                                 </div>
-                                <div class="why-choose-cta-content">
-                                    <p>Providing our Since</p>
-                                    <h3><span class="counter">2015</span></h3>
+                                <div class="feature-item-content-royal">
+                                    <h3 data-lang-en="Traditional Knowledge" data-lang-ta="பாரம்பரிய அறிவு">Traditional Knowledge</h3>
+                                    <p data-lang-en="Practitioner trained in traditional Varma Kalai and Thokkanam with a BSS Advanced Diploma certification." data-lang-ta="BSS மேம்பட்ட டிப்ளோமா சான்றிதழுடன் பாரம்பரிய வர்மக் கலை மற்றும் தொக்கணத்தில் பயிற்சி பெற்ற பயிற்சியாளர்.">Practitioner trained in traditional Varma Kalai and Thokkanam with a BSS Advanced Diploma certification.</p>
                                 </div>
                             </div>
-                            <!-- Why Choose CTA Box End -->
-                        </div>
-                        <!-- Why Choose Image Box-1 End -->
 
-                        <!-- Why Choose Image Box-2 Start -->
-                        <div class="why-choose-image-box-2">
-                            <!-- Why Choose Image Start -->
-                            <div class="why-choose-image">
-                                <figure class="image-anime">
-                                    <img src="images/why-choose-image-2.jpg" alt="">
-                                </figure>
+                            <div class="feature-item-royal wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="images/icon-core-feature-2-royal.svg" alt="Natural Wellness">
+                                </div>
+                                <div class="feature-item-content-royal">
+                                    <h3 data-lang-en="Natural Wellness Methods" data-lang-ta="இயற்கை நல்வாழ்வு முறைகள்">Natural Wellness Methods</h3>
+                                    <p data-lang-en="Using traditional herbal oils, natural preparations, and time-tested techniques passed down through Tamil tradition." data-lang-ta="தமிழ் மரபு வழியாக வந்த பாரம்பரிய மூலிகை எண்ணெய்கள், இயற்கை தயாரிப்புகள் மற்றும் காலம் சோதிக்கப்பட்ட நுட்பங்களைப் பயன்படுத்துதல்.">Using traditional herbal oils, natural preparations, and time-tested techniques passed down through Tamil tradition.</p>
+                                </div>
                             </div>
-                            <!-- Why Choose Image End -->
                         </div>
-                        <!-- Why Choose Image Box-2 End -->
+                        <!-- Feature Item List End -->
+
+                        <!-- Feature Content Body Start -->
+                        <div class="feature-content-body-royal wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="feature-content-btn-royal">
+                                <a href="contact.html" class="btn-default" data-lang-en="Get in Touch" data-lang-ta="தொடர்புகொள்ளுங்கள்">Get in Touch</a>
+                            </div>
+
+                            <div class="feature-contact-item-royal">
+                                <div class="icon-box">
+                                    <img src="images/icon-phone-white.svg" alt="Phone">
+                                </div>
+                                <div class="feature-contact-item-content-royal">
+                                    <p data-lang-en="Need Any Help?" data-lang-ta="உதவி தேவையா?">Need Any Help?</p>
+                                    <h3><a href="tel:+917304603707">73046 03707</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Feature Content Body End -->
                     </div>
-                    <!-- Why Choose Image Box End -->
+                    <!-- Feature Content End -->
                 </div>
 
                 <div class="col-xl-6">
-                    <!-- Why Choose Content Start -->
-                    <div class="why-choose-content">
-                       <!-- Section Title Start -->
-                        <div class="section-title">
-                            <span class="section-sub-title wow fadeInUp">Why Choose Us</span>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">The perfect place to relaxation and rejuvenation</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">From luxurious spa facilities to personalized our therapies, we focus on delivering services that promote relaxation, reduce stress.</p>
-                        </div>
-                        <!-- Section Title End --> 
-
-                        <!-- Why Choose Body Start -->
-                        <div class="why-choose-body wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- Why Choose Info box Start -->
-                            <div class="why-choose-info-box">
-                                <!-- Why Choose Info Content Start -->
-                                <div class="why-choose-info-content">
-                                    <h3>Certified Spa Therapists</h3>
-                                    <p>Our team of professional therapists is highly trained & experienced.</p>
-                                </div>
-                                <!-- Why Choose Info Content End -->
-
-                                <!-- Why Choose Info List Start -->
-                                <div class="why-choose-info-list">
-                                    <ul>
-                                        <li>Every session provides comfort</li>
-                                    </ul>
-                                </div>
-                                <!-- Why Choose Info List End -->
+                    <!-- Feature Image Box Start -->
+                    <div class="feature-image-box-royal wow fadeInUp">
+                        <div class="feature-cta-box-royal">
+                            <div class="feature-cta-image-royal">
+                                <figure class="image-anime">
+                                    <img src="images/our-feature-image-1-royal.jpg" alt="Traditional wellness environment">
+                                </figure>
                             </div>
-                            <!-- Why Choose Info box End -->
-
-                            <!-- Why Choose Counter box Start -->
-                            <div class="why-choose-counter-box">
-                                <!-- Why Choose Counter Header Start -->
-                                <div class="why-choose-counter-header">
-                                    <h2><span class="counter">25</span>+</h2>
-                                    <p>Years of Experience</p>
-                                </div>
-                                <!-- Why Choose Counter Header end -->
-
-                                <!-- Why Choose Counter Body Start -->
-                                <div class="why-choose-counter-body">
+                            <div class="feature-cta-contact-item-list-royal">
+                                <div class="feature-cta-contact-item-royal">
                                     <div class="icon-box">
-                                        <img src="images/icon-why-choose-item-2.svg" alt="">
+                                        <img src="images/icon-phone-accent.svg" alt="Phone">
                                     </div>
-                                    <div class="why-choose-counter-content">
-                                        <p>With years of experience in spa & our care</p>
+                                    <div class="feature-cta-contact-item-content-royal">
+                                        <h3><a href="tel:+917904454096">79044 54096</a></h3>
                                     </div>
                                 </div>
-                                <!-- Why Choose Counter Body End -->
                             </div>
-                            <!-- Why Choose Counter box End -->
                         </div>
-                        <!-- Why Choose Body End -->
-
-                        <!-- Why Choose Btn Start -->
-                        <div class="why-choose-btn wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Learn More</a>
+                        <div class="feature-image-royal">
+                            <figure class="image-anime">
+                                <img src="images/our-feature-image-2-royal.jpg" alt="Herbal wellness preparations">
+                            </figure>
                         </div>
-                        <!-- Why Choose Btn End -->
                     </div>
-                    <!-- Why Choose Content End -->
+                    <!-- Feature Image Box End -->
                 </div>
             </div>
         </div>
     </div>
     <!-- Why Choose Us Section End -->
 
-    <!-- Our Bneefits Section Start -->
-    <div class="our-benefits light-section">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-xl-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <span class="section-sub-title wow fadeInUp">Wellness Benefits</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Experience the true benefits of relaxation & self care</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-xl-6">
-                    <!-- Section Content Btn Start -->
-                    <div class="section-content-btn">
-                        <!-- Section Title Content Start -->
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                            <p>From relieving stress and improving circulation to enhancing skin health and overall well-being, our treatments provide lasting Our Benefit.</p>
-                        </div>
-                        <!-- Section Title Content End -->
-                        
-                        <!-- Section Button Start -->
-                        <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a class="btn-default" href="contact.html">Contact Us</a>
-                        </div>
-                        <!-- Section Button End -->
-                    </div>
-                    <!-- Section Content Btn End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <!-- Our Benefit Item Start -->
-                    <div class="our-benefit-item wow fadeInUp">
-                        <div class="benefit-item-header">
-                            <div class="icon-box">
-                                <img src="images/icon-benefits-item-1.svg" alt="">
-                            </div>
-                            <div class="benefit-item-content">
-                                <h3>Improved Skin Health</h3>
-                                <p>Professional spa therapy enhance blood circulation</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item-list">
-                            <ul>
-                                <li>Spa therapies improve circulation</li>
-                                <li>Deep cleansing & hydration treatments</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Our Benefit Item End -->
-                </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Our Benefit Item Start -->
-                    <div class="our-benefit-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="benefit-item-header">
-                            <div class="icon-box">
-                                <img src="images/icon-benefits-item-2.svg" alt="">
-                            </div>
-                            <div class="benefit-item-content">
-                                <h3>Deep Relaxation</h3>
-                                <p>Our spa treatments help reduce stress, relax tense muscles</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item-list">
-                            <ul>
-                                <li>Spa therapies help release tension</li>
-                                <li>Relaxing aromas and peaceful ambiance</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Our Benefit Item End -->
-                </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Our Benefit Image Box Start -->
-                    <div class="our-benefit-image-box wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Our Benefit Image Start -->
-                        <div class="our-benefit-image">
-                            <figure>
-                                <img src="images/our-benefit-image.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Our Benefit Image End -->
-
-                        <!-- Benefits Working Hours Box Start -->
-                        <div class="benefit-working-hours-box">
-                            <div class="benefit-working-hour-header">
-                                <div class="icon-box">
-                                    <i class="fa-regular fa-clock"></i>
-                                </div>
-                                <div class="benefit-working-hour-title">
-                                    <h3>Working Hours</h3>
-                                </div>
-                            </div>
-                            <div class="benefit-working-hour-content">
-                                <ul>
-                                    <li>Monday - Friday: <span>10:00 AM - 5:00 PM</span></li>
-                                    <li>Saturday: <span>12:00 PM - 5:00 PM</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Benefits Working Hours Box End -->
-                    </div>
-                    <!-- Our Benefit Image Box End -->
-                </div>
-                
-                <div class="col-lg-12">
-                    <!-- Our Benefit Footer Box Start -->
-                    <div class="our-benefit-footer-box">
-                        <!-- Benefit Footer List Start -->
-                        <div class="our-benefit-footer-list wow fadeInUp">
-                            <ul>
-                                <li>Spa Treatments</li>
-                                <li>Beauty and Wellness</li>
-                                <li>Premium Spa Services</li>
-                                <li>Relaxing Massage</li>
-                            </ul>
-                        </div>
-                        <!-- Benefit Footer List End -->
-
-                        <!-- Section Footer Text Start -->
-                        <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Satisfy Client Images Start -->
-                            <div class="satisfy-client-images">
-                                <div class="satisfy-client-image">
-                                    <figure class="image-anime">
-                                        <img src="images/author-1.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="satisfy-client-image add-more">
-                                    <i><img src="images/icon-phone-white.svg" alt=""></i>
-                                </div>
-                            </div>
-                            <!-- Satisfy Client Images End -->    
-                            <p>Let's make something great work together <a href="contact.html">Get Free Quote</a></p>
-                        </div>
-                        <!-- Section Footer Text End -->
-                    </div>
-                    <!-- Our Benefit Footer Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Bneefits Section End -->
-
-    <!-- Our Feature Section Start -->
-    <div class="our-feature">
-        <div class="container">
-             <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp">Our core features</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Premium features that enhance</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">From skilled therapists to calming spa environments, our core features are designed to create a soothing and rejuvenating experience for every client.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>                
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-xl-6">
-                    <!-- Our Feature Image box Start -->
-                    <div class="our-feature-image-box wow fadeInUp">
-                        <!-- Our Feature Image Box-1 Start -->
-                        <div class="our-feature-image-box-1">
-                            <!-- Our Feature Image Start -->
-                            <div class="our-feature-image">
-                                <figure class="image-anime">
-                                    <img src="images/our-feature-image-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Our Feature Image End -->
-
-                            <!-- Contact Us Circle Start -->
-                            <div class="contact-us-circle">
-                                <a href="contact.html">
-                                    <img src="images/contact-us-circle.svg" alt="">
-                                </a>
-                            </div>
-                            <!-- Contact Us Circle End -->
-                        </div> 
-                        <!-- Our Feature Image Box-1 End -->
-
-                        <!-- Our Feature Image Box-2 Start -->
-                        <div class="our-feature-image-box-2">
-                            <!-- Our Feature Image Start -->
-                            <div class="our-feature-image">
-                                <figure class="image-anime">
-                                    <img src="images/our-feature-image-2.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Our Feature Image End -->
-                        </div>
-                        <!-- Our Feature Image Box-2 End -->
-                    </div>
-                    <!-- Our Feature Image box End -->
-                </div>
-
-                <div class="col-xl-6">
-                    <!-- Feature Accordion Start -->
-                    <div class="feature-accordion" id="f_accordion">
-                        <!-- Feature Accordion Item Start -->
-                        <div class="accordion-item wow fadeInUp">
-                            <h2 class="accordion-header" id="f_heading1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f_collapse1" aria-expanded="true" aria-controls="f_collapse1">
-                                    01. Professional & Certified Therapists
-                                </button>
-                            </h2>
-                            <div id="f_collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="f_heading1" data-bs-parent="#f_accordion">
-                                <div class="accordion-body">
-                                    <p>Our experienced therapists provide expert care, personalize treatments to ensure a relaxing and effective our experience.</p>
-                                    <ul>
-                                        <li>Highly trained and certified professionals with expertise.</li>
-                                        <li>Dedicated providing personalized care, ensuring each treatment</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Feature Accordion Item End -->
-
-                        <!-- Feature Accordion Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="f_heading2">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f_collapse2" aria-expanded="false" aria-controls="f_collapse2">
-                                    02. Natural & Skin-Friendly Products
-                                </button>
-                            </h2>
-                            <div id="f_collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="f_heading2" data-bs-parent="#f_accordion">
-                                <div class="accordion-body">
-                                    <p>Our experienced therapists provide expert care, personalize treatments to ensure a relaxing and effective our experience.</p>
-                                    <ul>
-                                        <li>Highly trained and certified professionals with expertise.</li>
-                                        <li>Dedicated providing personalized care, ensuring each treatment</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Feature Accordion Item End -->
-
-                        <!-- Feature Accordion Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                            <h2 class="accordion-header" id="f_heading3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f_collapse3" aria-expanded="false" aria-controls="f_collapse3">
-                                    03. Calm & Luxurious Environment
-                                </button>
-                            </h2>
-                            <div id="f_collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="f_heading3" data-bs-parent="#f_accordion">
-                                <div class="accordion-body">
-                                    <p>Our experienced therapists provide expert care, personalize treatments to ensure a relaxing and effective our experience.</p>
-                                    <ul>
-                                        <li>Highly trained and certified professionals with expertise.</li>
-                                        <li>Dedicated providing personalized care, ensuring each treatment</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Feature Accordion Item End -->
-
-                        <!-- Feature Accordion Item Start -->
-                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                            <h2 class="accordion-header" id="f_heading4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f_collapse4" aria-expanded="false" aria-controls="f_collapse4">
-                                    04. Personalized our Treatments
-                                </button>
-                            </h2>
-                            <div id="f_collapse4" class="accordion-collapse collapse" role="region" aria-labelledby="f_heading4" data-bs-parent="#f_accordion">
-                                <div class="accordion-body">
-                                    <p>Our experienced therapists provide expert care, personalize treatments to ensure a relaxing and effective our experience.</p>
-                                    <ul>
-                                        <li>Highly trained and certified professionals with expertise.</li>
-                                        <li>Dedicated providing personalized care, ensuring each treatment</li>
-                                    </ul>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Feature Accordion Item End -->
-                    </div>
-                    <!-- Feature Accordion End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
-                    <div class="section-footer-text section-satisfy-img wow fadeInUp">
-                        <ul class="section-footer-border-list">
-                            <li>Trusted By <b>40,000+</b> Users</li>
-                            <li>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <b><span class="counter">4.9</span>/5</b>
-                            </li>
-                        </ul>
-
-                        <!-- Satisfy Client Images Start -->
-                        <div class="satisfy-client-images">
-                            <div class="satisfy-client-image">
-                                <figure class="image-anime">
-                                    <img src="images/author-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="satisfy-client-image add-more">
-                                <img src="images/icon-phone-white.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- Satisfy Client Images End -->
-                        <p>Let's make something great work together. <a href="contact.html">Get Free Quote</a></p>                     
-                    </div>
-                    <!-- Section Footer Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Feature Section End -->
-
-    <!-- Intro Video Section Start -->
-    <div class="intro-video">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-lg-12">
-                    <!-- Intro Video Start -->
-                    <div class="intro-video-box">
-                        <!-- Intro Video Image Start -->
-                        <div class="intro-video-image">
-                            <figure>
-                                <img src="images/intro-video-image.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Intro Video Image End -->
-
-                        <!-- Intro Video Circle Box Start -->
-                        <div class="intro-video-circle-box">
-                            <!-- Intro Video Circle Start -->
-                            <div class="intro-video-circle">
-                                <img src="images/watch-video-circle-white.svg" alt="">
-                            </div>
-                            <!-- Intro Video Circle End -->
-
-                            <!-- Video Play Button Start -->
-                            <div class="video-play-button" data-cursor-text="Play">
-                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-                                    <span><i class="fa-solid fa-play"></i></span>
-                                </a>
-                            </div>
-                            <!-- Video Play Button End -->
-                        </div>
-                        <!-- Intro Video Circle Box End -->
-                    </div>
-                    <!-- Intro Video End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Intro Video Section End -->
-
-    <!-- Our Pricing Section Start -->
-    <div class="our-pricing">
+    <!-- Qualifications Trust Section Start -->
+    <div class="why-choose-us-royal light-section" id="qualifications">
         <div class="container">
             <div class="row section-row">
                 <div class="col-xl-12">
-                    <!-- Section Title Start -->
                     <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp">Our Pricing Plans</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Choose the perfect spa package</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Whether you're looking for a quick relaxation session or a complete our retreat, our flexible spa packages are designed to suit different preferences and lifestyles.</p>
+                        <span class="section-sub-title wow fadeInUp" data-lang-en="Qualifications &amp; Training" data-lang-ta="தகுதிகள் &amp; பயிற்சி">Qualifications &amp; Training</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Traditional Knowledge. Dedicated Practice." data-lang-ta="பாரம்பரிய அறிவு. அர்ப்பணிப்புடன் கூடிய பயிற்சி.">Traditional Knowledge. Dedicated Practice.</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="Our practitioner's qualifications based on verified certificates and training documents." data-lang-ta="சரிபார்க்கப்பட்ட சான்றிதழ்கள் மற்றும் பயிற்சி ஆவணங்களின் அடிப்படையில் எங்கள் பயிற்சியாளரின் தகுதிகள்.">Our practitioner's qualifications based on verified certificates and training documents.</p>
                     </div>
-                    <!-- Section Title End -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- Pricing Item List Start -->
-                    <div class="pricing-item-list wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Pricing Item Start -->
-                        <div class="pricing-item">
-                            <div class="pricing-item-header">
-                                <div class="icon-box">
-                                    <img src="images/icon-pricing-1.svg" alt="">
-                                </div>
-                                <div class="pricing-item-content">
-                                    <span class="pricing-item-title">Basic Package</span>
-                                    <p>Perfect for those looking for a quick and refreshing spa experience.</p>
-                                </div>
-                                
-                                <div class="pricing-item-price">
-                                    <h2>$199.00<sub>/Monthly</sub></h2>
-                                </div>
-                            </div>
-                            <div class="pricing-item-body">
-                                <div class="pricing-item-body-list">
-                                    <h3>What's included:</h3>
-                                    <ul>
-                                        <li>Head & Shoulder Therapy</li>
-                                        <li>90-Minute Full Body Massage</li>
-                                        <li>Relax with soothing hot stone</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-item-btn">
-                                    <a href="contact.html" class="btn-default">Get Started With Plan</a>
-                                </div>
-                            </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="qualification-card wow fadeInUp">
+                        <div class="qualification-icon">
+                            <i class="fa-solid fa-certificate"></i>
                         </div>
-                        <!-- Pricing Item End -->
-
-                        <!-- Pricing Item Start -->
-                        <div class="pricing-item highlighted-box">
-                            <div class="pricing-item-header">
-                                <div class="icon-box">
-                                    <img src="images/icon-pricing-2.svg" alt="">
-                                </div>
-                                <div class="pricing-item-content">
-                                    <span class="pricing-item-title">Premium Package</span>
-                                    <p>Perfect for those looking for a quick and refreshing spa experience.</p>
-                                </div>
-                                <div class="pricing-item-price">
-                                    <h2>$299.00<sub>/Monthly</sub></h2>
-                                </div>
-                            </div>
-                            <div class="pricing-item-body">
-                                <div class="pricing-item-body-list">
-                                    <h3>What's included:</h3>
-                                    <ul>
-                                        <li>Head & Shoulder Therapy</li>
-                                        <li>90-Minute Full Body Massage</li>
-                                        <li>Relax with soothing hot stone</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-item-btn">
-                                    <a href="contact.html" class="btn-default">Get Started With Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pricing Item End -->
-
-                        <!-- Pricing Item Start -->
-                        <div class="pricing-item">
-                            <div class="pricing-item-header">
-                                <div class="icon-box">
-                                    <img src="images/icon-pricing-3.svg" alt="">
-                                </div>
-                                <div class="pricing-item-content">
-                                    <span class="pricing-item-title">Luxury Package</span>
-                                    <p>Perfect for those looking for a quick and refreshing spa experience.</p>
-                                </div>
-                                <div class="pricing-item-price">
-                                    <h2>$599.00<sub>/Monthly</sub></h2>
-                                </div>
-                            </div>
-                            <div class="pricing-item-body">
-                                <div class="pricing-item-body-list">
-                                    <h3>What's included:</h3>
-                                    <ul>
-                                        <li>Head & Shoulder Therapy</li>
-                                        <li>90-Minute Full Body Massage</li>
-                                        <li>Relax with soothing hot stone</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-item-btn">
-                                    <a href="contact.html" class="btn-default">Get Started With Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pricing Item End -->
+                        <h3 data-lang-en="BSS Advanced Diploma" data-lang-ta="BSS மேம்பட்ட டிப்ளோமா">BSS Advanced Diploma</h3>
+                        <p data-lang-en="Varma Kalai and Thokkanam – Bharat Sevak Samaj, ORAA Institute, Chennai (2020)" data-lang-ta="வர்மக் கலை மற்றும் தொக்கணம் – பாரத் சேவக் சமாஜ், ORAA நிறுவனம், சென்னை (2020)">Varma Kalai and Thokkanam – Bharat Sevak Samaj, ORAA Institute, Chennai (2020)</p>
+                        <span class="qualification-badge" data-lang-en="First Division" data-lang-ta="முதல் வகுப்பு">First Division</span>
                     </div>
-                    <!-- Pricing Item List End -->
                 </div>
 
-                <div class="col-lg-12">
-                    <!-- Pricing Benifit List Start -->
-                    <div class="pricing-benefit-list wow fadeInUp" data-wow-delay="0.6s">
-                        <ul>
-                            <li><img src="images/icon-pricing-benefit-1.svg" alt="">Get 30 day free trial</li>
-                            <li><img src="images/icon-pricing-benefit-2.svg" alt="">No any hidden fees pay</li>
-                            <li><img src="images/icon-pricing-benefit-3.svg" alt="">You can cancel anytime </li>
-                        </ul>
+                <div class="col-xl-4 col-md-6">
+                    <div class="qualification-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="qualification-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 data-lang-en="Psychology Assistant" data-lang-ta="உளவியல் உதவியாளர்">Psychology Assistant</h3>
+                        <p data-lang-en="World Skill Council – WSC Sri Vaari Institute of Science, Chengalpattu (2025–2026)" data-lang-ta="உலக திறன் கவுன்சில் – WSC ஸ்ரீ வாரி அறிவியல் நிறுவனம், செங்கல்பட்டு (2025–2026)">World Skill Council – WSC Sri Vaari Institute of Science, Chengalpattu (2025–2026)</p>
+                        <span class="qualification-badge" data-lang-en="WSQF Level 3" data-lang-ta="WSQF நிலை 3">WSQF Level 3</span>
                     </div>
-                    <!-- Pricing Benifit List End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="qualification-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="qualification-icon">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <h3 data-lang-en="Hypnosis Assistant" data-lang-ta="ஹிப்னாசிஸ் உதவியாளர்">Hypnosis Assistant</h3>
+                        <p data-lang-en="World Skill Council – WSC Life Changing Academy, Chennai (2025–2026)" data-lang-ta="உலக திறன் கவுன்சில் – WSC லைஃப் சேஞ்சிங் அகாடமி, சென்னை (2025–2026)">World Skill Council – WSC Life Changing Academy, Chennai (2025–2026)</p>
+                        <span class="qualification-badge" data-lang-en="WSQF Level 3" data-lang-ta="WSQF நிலை 3">WSQF Level 3</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Pricing Section End -->
+    <!-- Qualifications Trust Section End -->
 
-    <!-- Book Appointmnet Section Start -->
-    <div class="book-appointment dark-section">
+    <!-- Book Appointment Section Start -->
+    <div class="book-appointment dark-section" id="appointment">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -1127,49 +555,39 @@
                     <div class="appointment-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <span class="section-sub-title wow fadeInUp">Book An Appointment</span>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Relax refresh rejuvenate with our spa treatments</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our professional therapists provide personalized treatments that help you relax, relieve stress, and restore balance to your mind and body.</p>
+                            <span class="section-sub-title wow fadeInUp" data-lang-en="Book An Appointment" data-lang-ta="சந்திப்பை பதிவு செய்யுங்கள்">Book An Appointment</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Begin your traditional wellness journey with us" data-lang-ta="எங்களுடன் உங்கள் பாரம்பரிய நல்வாழ்வு பயணத்தைத் தொடங்குங்கள்">Begin your traditional wellness journey with us</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="Reach out to us to learn about our services, schedule a visit, or ask any questions. We are happy to guide you through the process." data-lang-ta="எங்கள் சேவைகளைப் பற்றி அறிய, வருகையைத் திட்டமிட அல்லது ஏதேனும் கேள்விகளைக் கேட்க எங்களை அணுகுங்கள்.">Reach out to us to learn about our services, schedule a visit, or ask any questions. We are happy to guide you through the process.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Appointment Image Box Start -->
                         <div class="appointment-image-box wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- Appointment Image Start -->
                             <div class="appointment-image">
                                 <figure>
-                                    <img src="images/appointment-image.jpg" alt="">
+                                    <img src="images/hero-bg-ash.jpg" alt="ASH Therapy Center">
                                 </figure>
                             </div>
-                            <!-- Appointment Image End -->
-
-                            <!-- Appointment Contact Item List Start -->
                             <div class="appointment-contact-item-list">
-                                <!-- Appointment Contact Item Start -->
                                 <div class="appointment-contact-item">
                                     <div class="icon-box">
-                                        <img src="images/icon-headphone-white.svg" alt="">
+                                        <img src="images/icon-headphone-white.svg" alt="Phone">
                                     </div>
                                     <div class="appointment-contact-item-content">
-                                        <p>Contact Us!</p>
-                                        <h3><a href="tel:123456789">+(123) 456-789</a></h3>
+                                        <p data-lang-en="Call Us" data-lang-ta="அழைக்கவும்">Call Us</p>
+                                        <h3><a href="tel:+917304603707">73046 03707</a></h3>
                                     </div>
                                 </div>
-                                <!-- Appointment Contact Item End -->
-
-                                <!-- Appointment Contact Item Start -->
                                 <div class="appointment-contact-item">
-                                    <div class="icon-box">
-                                        <img src="images/icon-mail-white.svg" alt="">
+                                    <div class="icon-box" style="background: #25D366;">
+                                        <i class="fa-brands fa-whatsapp" style="font-size: 20px; color: #fff;"></i>
                                     </div>
                                     <div class="appointment-contact-item-content">
-                                        <p>Email Address</p>
-                                        <h3><a href="mailto:info@domainname.com">info@domainname.com</a></h3>
+                                        <p>WhatsApp</p>
+                                        <h3><a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">73046 03707</a></h3>
                                     </div>
                                 </div>
-                                <!-- Appointment Contact Item End -->
                             </div>
-                            <!-- Appointment Contact Item List End -->
                         </div>
                         <!-- Appointment Image Box End -->
                     </div>
@@ -1179,782 +597,324 @@
                 <div class="col-xl-6">
                     <!-- Appointment Form Start -->
                     <div class="appointment-form">
-                        <!-- Section Title Start -->
                         <div class="section-title">
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Get In Touch</h2>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Enquire Now" data-lang-ta="இப்போது விசாரிக்கவும்">Enquire Now</h2>
                         </div>
-                        <!-- Section Title End -->
 
-                        <!-- Appointment Form Start -->
-                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                        <form id="appointmentForm" action="#" method="POST" class="wow fadeInUp" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>Full Name*</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Full Name" required>
+                                    <label data-lang-en="Your Name*" data-lang-ta="உங்கள் பெயர்*">Your Name*</label>
+                                    <input type="text" name="name" class="form-control" id="apt-name" placeholder="Enter your name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>Phone Number*</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Phone Number" required>
+                                    <label data-lang-en="Phone Number*" data-lang-ta="தொலைபேசி எண்*">Phone Number*</label>
+                                    <input type="tel" name="phone" class="form-control" id="apt-phone" placeholder="Enter phone number" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>Email Address*</label>
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Email Address" required>
-                                    <div class="help-block with-errors"></div>
+                                    <label data-lang-en="Preferred Service" data-lang-ta="விரும்பும் சேவை">Preferred Service</label>
+                                    <select name="service" class="form-control" id="apt-service">
+                                        <option value="" data-lang-en="Select a Service" data-lang-ta="சேவையைத் தேர்வு செய்யுங்கள்">Select a Service</option>
+                                        <option value="Varma Kalai">Traditional Varma Kalai</option>
+                                        <option value="Thokkanam">Thokkanam & Traditional Massage</option>
+                                        <option value="Women Wellness">Women's Wellness Massage</option>
+                                        <option value="Postnatal">Postnatal & Newborn Oil Massage</option>
+                                        <option value="Relaxation">Relaxation & Head Massage</option>
+                                        <option value="Meditation">Meditation & Yoga</option>
+                                        <option value="Spiritual">Spiritual Wellness Sessions</option>
+                                        <option value="Consultation">Traditional Wellness Guidance</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>Select Date*</label>                                    
-                                    <input type="text" name ="date" class="form-control" onfocus="(this.type='date')" id="date" placeholder="Select a Date">
-                                    <div class="help-block with-errors"></div>
+                                    <label data-lang-en="Preferred Date" data-lang-ta="விரும்பும் தேதி">Preferred Date</label>
+                                    <input type="date" name="date" class="form-control" id="apt-date">
                                 </div>
 
-                                <div class="form-group col-md-12 mb-5">
-                                    <label>Message</label>
-                                    <textarea name="message" class="form-control" id="message" rows="5" placeholder="Any Additional Message..."></textarea>
-                                    <div class="help-block with-errors"></div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <label data-lang-en="Preferred Time" data-lang-ta="விரும்பும் நேரம்">Preferred Time</label>
+                                    <input type="time" name="time" class="form-control" id="apt-time">
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <label data-lang-en="Message (Optional)" data-lang-ta="செய்தி (விரும்பினால்)">Message (Optional)</label>
+                                    <input type="text" name="message" class="form-control" id="apt-message" placeholder="Any additional message">
                                 </div>
 
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn-default btn-highlighted">Submit Message</button>
+                                    <button type="submit" class="btn-default btn-highlighted" id="apt-submit" data-lang-en="Send Enquiry via WhatsApp" data-lang-ta="WhatsApp வழியாக விசாரணை அனுப்புங்கள்">Send Enquiry via WhatsApp</button>
                                     <div id="msgSubmit" class="h3 hidden"></div>
+                                    <p class="form-note" data-lang-en="This form sends your enquiry via WhatsApp. No appointment is confirmed until the center responds." data-lang-ta="இந்த படிவம் உங்கள் விசாரணையை WhatsApp வழியாக அனுப்புகிறது. மையம் பதிலளிக்கும் வரை எந்த சந்திப்பும் உறுதிப்படுத்தப்படாது."><small>This form sends your enquiry via WhatsApp. No appointment is confirmed until the center responds.</small></p>
                                 </div>
                             </div>
                         </form>
-                        <!-- Appointment Form End -->
                     </div>
                     <!-- Appointment Form End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Book Appointmnet Section End -->
+    <!-- Book Appointment Section End -->
 
-    <!-- Our Testimonials Section Start -->
-    <div class="our-testimonials">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-xl-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <span class="section-sub-title wow fadeInUp">Our Testimonials</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">What our clients say about their spa experience</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-xl-6">
-                    <!-- Section Content Btn Start -->
-                    <div class="section-content-btn">
-                        <!-- Section Title Content Start -->
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                            <p>Discover how our relaxing treatments and professional care have helped clients feel refreshed, rejuvenated, and balanced.</p>
-                        </div>
-                        <!-- Section Title Content End -->
-                        
-                        <!-- Section Button Start -->
-                        <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a class="btn-default" href="testimonials.html">View All Reviews</a>
-                        </div>
-                        <!-- Section Button End -->
-                    </div>
-                    <!-- Section Content Btn End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Testimonial Slider Start -->
-                    <div class="testimonial-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper" data-cursor-text="Drag">
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item">
-                                         <div class="testimonial-item-author">
-                                            <div class="testimonial-author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-4.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content">
-                                                <h2>Brooklyn Simmons</h2>
-                                                <p>Wellness Client</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-item-body">
-                                            <div class="testimonial-item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content">
-                                                <p>“I had an amazing experience at this spa. The atmosphere was calm and relaxing, & the aromatherapy massage helped release all my stress. ”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Item End -->
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item">
-                                         <div class="testimonial-item-author">
-                                            <div class="testimonial-author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-2.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content">
-                                                <h2>Olivia Thompson</h2>
-                                                <p>Regular Client</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-item-body">
-                                            <div class="testimonial-item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content">
-                                                <p>“ The therapists extremely professional & attentive. My facial treatment made my skin feel smooth and glowing. I highly recommend this spa to anyone. ”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Item End -->
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item">
-                                         <div class="testimonial-item-author">
-                                            <div class="testimonial-author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-3.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content">
-                                                <h2>Sophia Martinez</h2>
-                                                <p>Spa Guest</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-item-body">
-                                            <div class="testimonial-item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content">
-                                                <p>“The hot stone therapy was one of the most relaxing experiences I've ever had. The staff made sure I was comfortable throughout the session. ”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Item End -->
-                                </div>
-                                <!-- Testimonial Slide End -->
-
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item">
-                                         <div class="testimonial-item-author">
-                                            <div class="testimonial-author-image">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-1.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content">
-                                                <h2>Emma Williams</h2>
-                                                <p>Spa Client</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-item-body">
-                                            <div class="testimonial-item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content">
-                                                <p>"The moment I stepped into the spa, I felt a wave of calm. The massage was perfect, and the staff made me feel so comfortable. Highly recommend!"</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Item End -->
-                                </div>
-                                <!-- Testimonial Slide End -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial Slider End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Section Footer Text Start -->
-                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Satisfy Client Images Start -->
-                        <div class="satisfy-client-images">
-                            <div class="satisfy-client-image">
-                                <figure class="image-anime">
-                                    <img src="images/author-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="satisfy-client-image add-more">
-                                <img src="images/icon-phone-white.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- Satisfy Client Images End -->    
-                        <p>Let's make something great work together <a href="contact.html"> Get Free Quote.</a></p>
-                    </div>
-                    <!-- Section Footer Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Testimonials Section End -->
-
-    <!-- Our Faqs Section Start -->
-    <div class="our-faqs light-section">
+    <!-- FAQS Section Start -->
+    <div class="our-faqs-royal" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
-                    <!-- Faqs Content Start-->
-                    <div class="faqs-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <span class="section-sub-title wow fadeInUp">Frequently Asked Questions</span>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Everything you should know about our treatments</h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- Faq CTA Box Start -->
-                        <div class="faq-cta-box wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Faq CTA Header Start -->
-                           <div class="faq-cta-header">
-                                <h3>Contact Information</h3>
-                           </div>
-                            <!-- Faq CTA Header End -->
-
-                            <!-- Faq CTA Item List Start -->
-                            <div class="faq-cta-item-list">
-                                <!-- Faq CTA Item Start -->
-                                <div class="faq-cta-item">
-                                    <div class="icon-box">
-                                        <img src="images/icon-phone-white.svg" alt="">
-                                    </div>
-                                    <div class="faq-cta-item-content">
-                                        <p>Phone Number</p>
-                                        <h3><a href="tel:123456789">+(123) 456-789</a></h3>
-                                    </div>
-                                </div>
-                                <!-- Faq CTA Item End -->
+                    <div class="faqs-content-box-royal">
+                        <div class="faqs-content-royal">
+                            <div class="section-title">
+                                <span class="section-sub-title wow fadeInUp" data-lang-en="Frequently Asked Questions" data-lang-ta="அடிக்கடி கேட்கப்படும் கேள்விகள்">Frequently Asked Questions</span>
+                                <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Common questions about our services" data-lang-ta="எங்கள் சேவைகள் பற்றிய பொதுவான கேள்விகள்">Common questions about our services</h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s" data-lang-en="Find answers to common questions about traditional wellness services at ASH Therapy Center." data-lang-ta="ASH சிகிச்சை மையத்தில் பாரம்பரிய நல்வாழ்வு சேவைகள் பற்றிய பொதுவான கேள்விகளுக்கான பதில்களைக் கண்டறியுங்கள்.">Find answers to common questions about traditional wellness services at ASH Therapy Center.</p>
                             </div>
-                            <!-- Faq CTA Item List End -->
+
+                            <div class="faqs-content-btn-royal wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="contact.html" class="btn-default" data-lang-en="Contact Us" data-lang-ta="எங்களை தொடர்புகொள்ளுங்கள்">Contact Us</a>
+                            </div>
                         </div>
-                        <!-- Faq CTA Box End -->
+
+                        <div class="faqs-contact-list-royal wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="faqs-contact-item-royal">
+                                <div class="icon-box">
+                                    <img src="images/icon-headphone-white.svg" alt="Phone">
+                                </div>
+                                <div class="faqs-contact-item-content-royal">
+                                    <p data-lang-en="Call Us" data-lang-ta="அழைக்கவும்">Call Us</p>
+                                    <h3><a href="tel:+917304603707">73046 03707</a></h3>
+                                </div>
+                            </div>
+                            <div class="faqs-contact-item-royal">
+                                <div class="icon-box">
+                                    <img src="images/icon-headphone-white.svg" alt="Phone">
+                                </div>
+                                <div class="faqs-contact-item-content-royal">
+                                    <p data-lang-en="Alternate Number" data-lang-ta="மாற்று எண்">Alternate Number</p>
+                                    <h3><a href="tel:+917904454096">79044 54096</a></h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Faqs Content End-->
                 </div>
 
                 <div class="col-xl-6">
                     <!-- FAQ Accordion Start -->
-                    <div class="faq-accordion" id="faqaccordion">
-                        <!-- FAQ Item Start -->
+                    <div class="faq-accordion-royal" id="accordion">
                         <div class="accordion-item wow fadeInUp">
                             <h2 class="accordion-header" id="heading1">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    Q1. What should I expect during my first spa visit?
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" data-lang-en="What is Varma Kalai?" data-lang-ta="வர்மக் கலை என்றால் என்ன?">
+                                    What is Varma Kalai?
                                 </button>
                             </h2>
-                            <div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#faqaccordion">
+                            <div id="collapse1" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>During your first visit, our team will welcome you and guide you through the spa facilities. A therapist will briefly discuss your needs and recommend treatments that suit your preferences.</p>
+                                    <p data-lang-en="Varma Kalai is an ancient Tamil traditional practice that focuses on specific vital points (varma points) in the body. It is a traditional system of wellness that has been practised in Tamil Nadu for generations. It is not a substitute for modern medical treatment." data-lang-ta="வர்மக் கலை என்பது உடலில் உள்ள குறிப்பிட்ட முக்கிய புள்ளிகளில் (வர்ம புள்ளிகள்) கவனம் செலுத்தும் பண்டைய தமிழ் பாரம்பரிய நடைமுறையாகும். இது தமிழ்நாட்டில் தலைமுறைகளாக நடைமுறையில் உள்ள ஒரு பாரம்பரிய நல்வாழ்வு அமைப்பாகும். இது நவீன மருத்துவ சிகிச்சைக்கு மாற்றாக அல்ல.">Varma Kalai is an ancient Tamil traditional practice that focuses on specific vital points (varma points) in the body. It is a traditional system of wellness that has been practised in Tamil Nadu for generations. It is not a substitute for modern medical treatment.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ Item End -->
 
-                        <!-- FAQ Item Start -->
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="heading2"> 
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Q2. Do I need to book an appointment in advance?
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" data-lang-en="What services does ASH offer?" data-lang-ta="ASH என்ன சேவைகளை வழங்குகிறது?">
+                                    What services does ASH offer?
                                 </button>
                             </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#faqaccordion">
+                            <div id="collapse2" class="accordion-collapse collapse" role="region" aria-labelledby="heading2" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>During your first visit, our team will welcome you and guide you through the spa facilities. A therapist will briefly discuss your needs and recommend treatments that suit your preferences.</p>
+                                    <p data-lang-en="We offer traditional Varma Kalai, Thokkanam massage, women's wellness massage, postnatal care, relaxation massage, meditation, yoga, spiritual wellness sessions, and traditional wellness guidance. Contact us for details about specific services." data-lang-ta="நாங்கள் பாரம்பரிய வர்மக் கலை, தொக்கணம் மசாஜ், பெண்கள் நல்வாழ்வு மசாஜ், பிரசவத்திற்குப் பின் பராமரிப்பு, ஓய்வு மசாஜ், தியானம், யோகா, ஆன்மீக நல்வாழ்வு அமர்வுகள் மற்றும் பாரம்பரிய நல்வாழ்வு வழிகாட்டுதல் ஆகியவற்றை வழங்குகிறோம்.">We offer traditional Varma Kalai, Thokkanam massage, women's wellness massage, postnatal care, relaxation massage, meditation, yoga, spiritual wellness sessions, and traditional wellness guidance. Contact us for details about specific services.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ Item End -->
 
-                        <!-- FAQ Item Start -->
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                             <h2 class="accordion-header" id="heading3">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    Q3. What should I wear during a spa treatment?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" data-lang-en="How can I book an appointment?" data-lang-ta="நான் எப்படி சந்திப்பை பதிவு செய்வது?">
+                                    How can I book an appointment?
                                 </button>
                             </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#faqaccordion">
+                            <div id="collapse3" class="accordion-collapse collapse" role="region" aria-labelledby="heading3" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>During your first visit, our team will welcome you and guide you through the spa facilities. A therapist will briefly discuss your needs and recommend treatments that suit your preferences.</p>
+                                    <p data-lang-en="You can call us at 73046 03707 or 79044 54096, send a WhatsApp message, or use the enquiry form on our website. We recommend contacting us before visiting to confirm availability." data-lang-ta="நீங்கள் 73046 03707 அல்லது 79044 54096 என்ற எண்ணில் அழைக்கலாம், WhatsApp செய்தி அனுப்பலாம், அல்லது எங்கள் இணையதளத்தில் உள்ள விசாரணை படிவத்தைப் பயன்படுத்தலாம்.">You can call us at 73046 03707 or 79044 54096, send a WhatsApp message, or use the enquiry form on our website. We recommend contacting us before visiting to confirm availability.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ Item End -->
 
-                        <!-- FAQ Item Start -->
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                             <h2 class="accordion-header" id="heading4">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    Q4. How early should I arrive for my appointment?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" data-lang-en="Are services available for women?" data-lang-ta="பெண்களுக்கு சேவைகள் உள்ளதா?">
+                                    Are services available for women?
                                 </button>
                             </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" role="region" aria-labelledby="heading4" data-bs-parent="#faqaccordion">
+                            <div id="collapse4" class="accordion-collapse collapse" role="region" aria-labelledby="heading4" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>During your first visit, our team will welcome you and guide you through the spa facilities. A therapist will briefly discuss your needs and recommend treatments that suit your preferences.</p>
+                                    <p data-lang-en="Yes, we offer dedicated women's wellness massage services with full privacy and professional boundaries. Please contact us to learn more and schedule a session." data-lang-ta="ஆம், முழு தனியுரிமை மற்றும் தொழில்முறை எல்லைகளுடன் பெண்களுக்கான நல்வாழ்வு மசாஜ் சேவைகளை நாங்கள் வழங்குகிறோம். மேலும் அறிய எங்களைத் தொடர்புகொள்ளுங்கள்.">Yes, we offer dedicated women's wellness massage services with full privacy and professional boundaries. Please contact us to learn more and schedule a session.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ Item End --> 
-                        
-                        <!-- FAQ Item Start -->
+
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
                             <h2 class="accordion-header" id="heading5">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    Q5. Are your spa products natural and safe for the skin?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" data-lang-en="Can traditional wellness services replace medical treatment?" data-lang-ta="பாரம்பரிய நல்வாழ்வு சேவைகள் மருத்துவ சிகிச்சையை மாற்ற முடியுமா?">
+                                    Can traditional wellness services replace medical treatment?
                                 </button>
                             </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" role="region" aria-labelledby="heading5" data-bs-parent="#faqaccordion">
+                            <div id="collapse5" class="accordion-collapse collapse" role="region" aria-labelledby="heading5" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>During your first visit, our team will welcome you and guide you through the spa facilities. A therapist will briefly discuss your needs and recommend treatments that suit your preferences.</p>
+                                    <p data-lang-en="No. Our traditional wellness services are intended to complement, not replace, qualified medical care. If you have specific health concerns or symptoms, we encourage you to consult an appropriately qualified healthcare professional." data-lang-ta="இல்லை. எங்கள் பாரம்பரிய நல்வாழ்வு சேவைகள் தகுதிவாய்ந்த மருத்துவ பராமரிப்புக்கு மாற்றாக அல்ல, நிரப்பும் வகையில் உள்ளவை. உங்களுக்கு குறிப்பிட்ட உடல்நலக் கவலைகள் இருந்தால், தகுதிவாய்ந்த மருத்துவ நிபுணரை அணுகுமாறு அறிவுறுத்துகிறோம்.">No. Our traditional wellness services are intended to complement, not replace, qualified medical care. If you have specific health concerns or symptoms, we encourage you to consult an appropriately qualified healthcare professional.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ Item End -->
                     </div>
-                    <!-- FAQ Accordion End -->                 
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Comapany Support Slider Box Start -->
-                    <div class="company-supports-slider-box">
-                        <!-- Comapany Support Content Start -->
-                        <div class="company-supports-content">
-                            <hr><p>Trusted by Clients Who Value Relaxation</p><hr>
-                        </div>
-                        <!-- Comapany Support Content End -->
-
-                        <!-- Comapany Support Slider Start -->
-                        <div class="company-supports-slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-    
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-2.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-    
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-3.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-    
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-4.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-    
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-    
-                                    <!-- Company Support Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="company-supports-logo">
-                                            <img src="images/company-supports-logo-3.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Comapany Support Logo End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Comapany Support Slider End -->
-                    </div>
-                    <!-- Comapany Support Slider Box End -->
+                    <!-- FAQ Accordion End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Faqs Section End -->
-    
-    <!-- Our Blog Section Start -->
-    <div class="our-blog">
+    <!-- FAQS Section End -->
+
+    <!-- Location / Map Section Start -->
+    <div class="ash-location-section light-section" id="location">
         <div class="container">
-            <div class="row section-row align-items-center">    
-                <div class="col-xl-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <span class="section-sub-title wow fadeInUp">Latest Blogs</span>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Experience premium our & deep relaxation</h2>
+            <div class="row section-row">
+                <div class="col-xl-12">
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp" data-lang-en="Visit Us" data-lang-ta="எங்களை சந்தியுங்கள்">Visit Us</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque" data-lang-en="Find Us at Our Center" data-lang-ta="எங்கள் மையத்தில் எங்களைக் கண்டறியுங்கள்">Find Us at Our Center</h2>
                     </div>
-                    <!-- Section Title End -->
-                </div>
-
-                <div class="col-xl-6">
-                    <!-- Section Content Btn Start -->
-                    <div class="section-content-btn">
-                        <!-- Section Title Content Start -->
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                            <p>Enjoy a luxurious spa environment where comfort, relaxation, & our come together. Our personalized treatments help reduce stress, improve circulation..</p>
-                        </div>
-                        <!-- Section Title Content End -->
-                        
-                        <!-- Section Button Start -->
-                        <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a class="btn-default" href="blog.html">View All Blogs</a>
-                        </div>
-                        <!-- Section Button End -->
-                    </div>
-                    <!-- Section Content Btn End -->
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
-                                </figure>    
-                            </a>                           
-                        </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content">
-                                <h2><a href="blog-single.html">5 Benefits of Regular Spa Treatment for Your Health</a></h2>
+                <div class="col-xl-6 wow fadeInUp">
+                    <div class="ash-location-info">
+                        <div class="ash-location-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3 data-lang-en="Address" data-lang-ta="முகவரி">Address</h3>
+                                <p>206/2, SMPT Illam, Nedungulam Road,<br>Kankappillai Valasai, Vilathikulam,<br>Ettayapuram TK, Thoothukudi District,<br>Tamil Nadu – 627803</p>
                             </div>
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                        </div>
+                        <div class="ash-location-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3 data-lang-en="Phone" data-lang-ta="தொலைபேசி">Phone</h3>
+                                <p><a href="tel:+917304603707">73046 03707</a><br><a href="tel:+917904454096">79044 54096</a></p>
+                            </div>
+                        </div>
+                        <div class="ash-location-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20know%20more%20about%20Ash%20Agasthiya%20Sai%20Varma%20Therapy%20Center%20and%20your%20services.%20Please%20share%20the%20available%20services%2C%20fees%2C%20timings%2C%20and%20appointment%20details." target="_blank" rel="noopener">73046 03707</a></p>
+                            </div>
+                        </div>
+                        <div class="ash-location-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h3 data-lang-en="Center Operating Hours" data-lang-ta="மையத்தின் வேலை நேரம்">Center Operating Hours</h3>
+                                <p data-lang-en="Mon – Sat: 8:30 AM – 1:00 PM &amp; 4:00 PM – 8:00 PM<br>Sunday: 8:30 AM – 1:00 PM (By Appointment)" data-lang-ta="திங்கள் – சனி: காலை 8:30 – 1:00 &amp; மாலை 4:00 – 8:00<br>ஞாயிறு: காலை 8:30 – 1:00 (முன்பதிவு அவசியம்)">Mon – Sat: 8:30 AM – 1:00 PM &amp; 4:00 PM – 8:00 PM<br>Sunday: 8:30 AM – 1:00 PM (By Appointment)</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Post Item End -->
                 </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
-                                </figure>    
-                            </a>                           
-                        </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content">
-                                <h2><a href="blog-single.html">How Aromatherapy Helps Reduce Stress and Anxiety</a></h2>
-                            </div>
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
-                            </div>
-                        </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="ash-map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.2!2d78.16!3d9.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDcnNDguMCJOIDc4wrAwOSczNi4wIkU!5e0!3m2!1sen!2sin!4v1" width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ASH Therapy Center Location"></iframe>
                     </div>
-                    <!-- Post Item End -->
-                </div>
-
-                <div class="col-xl-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
-                                </figure>    
-                            </a>                           
-                        </div>
-                        <div class="post-item-body">
-                            <div class="post-item-content">
-                                <h2><a href="blog-single.html">Top Skincare Treatments for Healthy and Glowing Skin</a></h2>
-                            </div>
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Post Item End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Blog Section End -->
-
-    <!-- Scrolling Ticker Section Start -->
-    <div class="our-scrolling-ticker">
-        <!-- Scrolling Ticker Box Start -->
-        <div class="scrolling-ticker-box">
-            <!-- Scrolling Content Start -->
-            <div class="scrolling-content">
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-1.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-2.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-3.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-4.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-5.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-6.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-            </div>
-            <!-- Scrolling Content End -->
-
-            <!-- Scrolling Content Start -->
-            <div class="scrolling-content">
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-1.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-2.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-3.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-4.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-5.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-
-                <!-- Image Gallery Start -->
-                <div class="scrolling-ticker-gallery">
-                    <figure class="image-anime">
-                        <img src="images/gallery-6.jpg" alt="">
-                    </figure>
-                </div>
-                <!-- Image Gallery End -->
-            </div>
-            <!-- Scrolling Content End -->
-        </div>
-        <!-- Scrolling Ticker Box End -->
-    </div>
-    <!-- Scrolling Ticker Section End -->
+    <!-- Location / Map Section End -->
 
     <!-- Main Footer Start -->
-    <footer class="main-footer dark-section">
+    <div class="main-footer-royal dark-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Footer Header Start -->
-                    <div class="footer-header">
-                        <!-- Section title Start -->
-                        <div class="section-title">
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Your journey to relaxation balance and well being begins here</h2>
+                    <div class="footer-header-royal">
+                        <div class="footer-logo-royal">
+                            <span class="ash-footer-logo">ASH <small>Agathiya Sai Healing</small></span>
                         </div>
-                        <!-- Section title End -->
-
-                        <!-- Contact Us Circle Start -->
-                        <div class="contact-us-circle">
-                            <a href="contact.html">
-                                <img src="images/contact-us-circle.svg" alt="">
-                            </a>
+                        <div class="footer-menu-royal">
+                            <ul>
+                                <li><a href="index.html" data-lang-en="Home" data-lang-ta="முகப்பு">Home</a></li>
+                                <li><a href="about.html" data-lang-en="About Us" data-lang-ta="எங்களைப் பற்றி">About Us</a></li>
+                                <li><a href="services.html" data-lang-en="Services" data-lang-ta="சேவைகள்">Services</a></li>
+                                <li><a href="faqs.html" data-lang-en="FAQ" data-lang-ta="கேள்வி பதில்">FAQ</a></li>
+                                <li><a href="contact.html" data-lang-en="Contact" data-lang-ta="தொடர்பு">Contact</a></li>
+                            </ul>
                         </div>
-                        <!-- Contact Us Circle End -->
                     </div>
                     <!-- Footer Header End -->
                 </div>
 
-                <div class="col-xl-4">
-                    <!-- About Footer Start -->
-                    <div class="about-footer">
-                        <!-- Footer Logo Start -->
-                        <div class="footer-logo">
-                            <img src="images/logo.svg" alt="">
+                <div class="col-lg-4">
+                    <div class="about-footer-royal">
+                        <div class="about-footer-content-royal">
+                            <h2 data-lang-en="About Our Center" data-lang-ta="எங்கள் மையத்தைப் பற்றி">About Our Center</h2>
+                            <p data-lang-en="Ash Agasthiya Sai Varma Therapy Center is dedicated to providing traditional Tamil wellness services including Varma Kalai, Thokkanam, massage, meditation, and yoga." data-lang-ta="ASH அகத்திய சாய் வர்மா சிகிச்சை மையம் வர்மக் கலை, தொக்கணம், மசாஜ், தியானம் மற்றும் யோகா உள்ளிட்ட பாரம்பரிய தமிழ் நல்வாழ்வு சேவைகளை வழங்குவதில் அர்ப்பணிப்புடன் செயல்படுகிறது.">Ash Agasthiya Sai Varma Therapy Center is dedicated to providing traditional Tamil wellness services including Varma Kalai, Thokkanam, massage, meditation, and yoga.</p>
                         </div>
-                        <!-- Footer Logo End -->
-
-                        <!-- About Footer Content Start -->
-                        <div class="about-footer-content">
-                            <p>Our spa and our center is dedicated to providing relaxing therapies that rejuvenate the body and calm the mind.</p>
-                        </div>
-                        <!-- About Footer Content End -->
-
-                        <!-- Footer Social Link Start -->
-                        <div class="footer-social-links">
+                        <div class="footer-social-links-royal">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://wa.me/917304603707" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="tel:+917304603707" aria-label="Phone"><i class="fa-solid fa-phone"></i></a></li>
                             </ul>
                         </div>
-                        <!-- Footer Social Link End -->                     
                     </div>
-                    <!-- About Footer End -->
                 </div>
 
-                <div class="col-xl-8">
-                    <!-- Footer Links Box Start -->
-                    <div class="footer-links-box">
-                        <!-- Footer Links Start -->
-                        <div class="footer-links">
-                            <h2>Quick Links</h2>
+                <div class="col-lg-8">
+                    <div class="footer-links-box-royal">
+                        <div class="footer-links-royal">
+                            <h2 data-lang-en="Our Services" data-lang-ta="எங்கள் சேவைகள்">Our Services</h2>
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="services.html">Traditional Varma Kalai</a></li>
+                                <li><a href="services.html">Thokkanam & Massage</a></li>
+                                <li><a href="services.html">Women's Wellness</a></li>
+                                <li><a href="services.html">Meditation & Yoga</a></li>
                             </ul>
                         </div>
-                        <!-- Footer Links End -->
-
-                        <!-- Footer Links Start -->
-                        <div class="footer-links">
-                            <h2>Our Services</h2>
-                            <ul>
-                                <li><a href="service-single.html">Deep Tissue Massage</a></li>
-                                <li><a href="service-single.html">Hot Stone Therapy</a></li>
-                                <li><a href="service-single.html">Facial Skin Treatment</a></li>
-                                <li><a href="service-single.html">Body Scrub & Detox</a></li>
-                                <li><a href="service-single.html">Aromatherapy Massage</a></li>
-                            </ul>
-                        </div>
-                        <!-- Footer Links End -->
-
-                        <!-- Footer Contact Info List Start -->
-                        <div class="footer-links footer-contact-info-list">
-                            <h2>Contact Information</h2>
-
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <p>Our Address</p>
-                                <h3>4517 Washington Ave. Manchester, Kentucky 39495</h3>
+                        <div class="footer-links-royal footer-contact-links-royal">
+                            <h2 data-lang-en="Contact Information" data-lang-ta="தொடர்பு தகவல்">Contact Information</h2>
+                            <div class="footer-contact-item-royal">
+                                <p data-lang-en="Our Address" data-lang-ta="எங்கள் முகவரி">Our Address</p>
+                                <h3>206/2, SMPT Illam, Nedungulam Road, Vilathikulam, Tamil Nadu – 627803</h3>
                             </div>
-                            <!-- Footer Contact Item End -->
-
-                            <!-- Footer Contact Item Start -->
-                            <div class="footer-contact-item">
-                                <p>Phone Number</p>
-                                <h3><a href="tel:123456789">+(123) 456-789</a></h3>
+                            <div class="footer-contact-item-royal">
+                                <p data-lang-en="Phone Numbers" data-lang-ta="தொலைபேசி எண்கள்">Phone Numbers</p>
+                                <h3><a href="tel:+917304603707">73046 03707</a> | <a href="tel:+917904454096">79044 54096</a></h3>
                             </div>
-                            <!-- Footer Contact Item End -->
                         </div>
-                        <!-- Footer Contact Info List End -->                                                           
                     </div>
-                    <!-- Footer Links Box End --> 
+                </div>
+
+                <div class="col-xl-12">
+                    <div class="footer-copyright-royal">
+                        <div class="footer-copyright-text-royal">
+                            <p>Copyright © 2026 Ash Agasthiya Sai Varma Therapy Center. All Rights Reserved.</p>
+                        </div>
                     </div>
-                        
-                <div class="col-lg-12">
-                    <!-- Footer Copyright Text Start -->
-                    <div class="footer-copyright-text">
-                        <p>Copyright © 2026 All Rights Reserved.</p>
-                    </div>
-                    <!-- Footer Copyright Text End -->
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
     <!-- Main Footer End -->
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917304603707?text=Vanakkam%2C%20I%20would%20like%20to%20know%20more%20about%20Ash%20Agasthiya%20Sai%20Varma%20Therapy%20Center%20and%20your%20services.%20Please%20share%20the%20available%20services%2C%20fees%2C%20timings%2C%20and%20appointment%20details." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" id="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-float-text" data-lang-en="Chat with us" data-lang-ta="எங்களுடன் பேசுங்கள்">Chat with us</span>
+    </a>
+
+    <!-- Click to Call Button -->
+    <a href="tel:+917304603707" class="call-float" aria-label="Call Us" id="call-float">
+        <i class="fa-solid fa-phone"></i>
+    </a>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -1987,8 +947,7 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
-	<script src="../../demo.awaikenthemes.com/assets/js/theme-panel-dynamic.js"></script>
+    <!-- ASH Custom Script -->
+    <script src="js/ash-custom.js"></script>
 </body>
-
-<!-- Mirrored from https://html.awaikenthemes.com/revoza/ by HTTrack Website Copier/3.x [XR&CO], Wed, 14 Oct 2026 08:22:08 GMT -->
 </html>

@@ -1,0 +1,668 @@
+/* ============================================
+   ASH Agasthiya Sai Varma Therapy Center
+   Custom Styles Override
+   ============================================ */
+
+/* ---- CSS Variables / Design Tokens ---- */
+:root {
+    --ash-deep-green: #174D35;
+    --ash-leaf-green: #39744B;
+    --ash-warm-ivory: #FAF7EF;
+    --ash-gold: #C5A15A;
+    --ash-charcoal: #292D29;
+    --ash-gold-light: #d4b474;
+    --ash-green-dark: #0f3524;
+    --ash-white: #ffffff;
+    --ash-font-tamil: 'Noto Sans Tamil', sans-serif;
+}
+
+/* ---- Tamil Font Support ---- */
+[lang="ta"], .tamil-text,
+[data-lang-ta] {
+    font-family: var(--ash-font-tamil), sans-serif;
+}
+
+/* ---- Global Color Overrides ---- */
+body {
+    background-color: var(--ash-warm-ivory);
+    color: var(--ash-charcoal);
+}
+
+/* ---- Logo Styles ---- */
+.ash-logo-text {
+    display: flex !important;
+    flex-direction: column;
+    text-decoration: none !important;
+    line-height: 1.1;
+}
+
+.ash-logo-main {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--ash-gold) !important;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.ash-logo-sub {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--ash-warm-ivory) !important;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.header-sticky.sticky-header .ash-logo-main {
+    color: var(--ash-deep-green) !important;
+}
+
+.header-sticky.sticky-header .ash-logo-sub {
+    color: var(--ash-charcoal) !important;
+}
+
+/* ---- Footer Logo ---- */
+.ash-footer-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--ash-gold);
+    letter-spacing: 4px;
+}
+
+.ash-footer-logo small {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* ---- Theme Color Overrides ---- */
+.btn-default {
+    background: var(--ash-deep-green) !important;
+    border-color: var(--ash-deep-green) !important;
+    color: var(--ash-white) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-default:hover {
+    background: var(--ash-leaf-green) !important;
+    border-color: var(--ash-leaf-green) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(23, 77, 53, 0.3);
+}
+
+.btn-default.btn-highlighted {
+    background: var(--ash-gold) !important;
+    border-color: var(--ash-gold) !important;
+    color: var(--ash-charcoal) !important;
+    font-weight: 600;
+}
+
+.btn-default.btn-highlighted:hover {
+    background: var(--ash-gold-light) !important;
+    border-color: var(--ash-gold-light) !important;
+    box-shadow: 0 8px 25px rgba(197, 161, 90, 0.4);
+}
+
+/* ---- Section Sub-Title ---- */
+.section-sub-title {
+    color: var(--ash-gold) !important;
+    letter-spacing: 2px;
+}
+
+/* ---- Hero Section ---- */
+.hero-royal {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(15, 53, 36, 0.88) 0%, rgba(23, 77, 53, 0.75) 50%, rgba(41, 45, 41, 0.7) 100%);
+    z-index: 0;
+}
+
+.hero-royal .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-royal .hero-bg-video {
+    display: none !important;
+}
+
+/* Hero Contact Quick */
+.hero-contact-quick {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero-contact-quick .icon-box {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background: var(--ash-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ash-charcoal);
+    font-size: 18px;
+}
+
+.hero-contact-quick-content p {
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+    font-size: 13px;
+}
+
+.hero-contact-quick-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.hero-contact-quick-content h3 a {
+    color: var(--ash-white);
+    text-decoration: none;
+}
+
+.hero-contact-quick-content h3 a:hover {
+    color: var(--ash-gold);
+}
+
+.whatsapp-hero-btn {
+    display: inline-block;
+    color: var(--ash-white) !important;
+    background: #25D366;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-hero-btn:hover {
+    background: #1da851;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    color: var(--ash-white) !important;
+}
+
+/* ---- About Section ---- */
+.about-us-royal {
+    background-color: var(--ash-warm-ivory);
+}
+
+/* ---- Services Section ---- */
+.our-services-royal.light-section {
+    background-color: var(--ash-white);
+}
+
+.service-item-royal {
+    border-color: rgba(23, 77, 53, 0.1) !important;
+    transition: all 0.4s ease;
+}
+
+.service-item-royal:hover {
+    border-color: var(--ash-gold) !important;
+    box-shadow: 0 15px 40px rgba(23, 77, 53, 0.12);
+    transform: translateY(-5px);
+}
+
+.service-item-royal .icon-box {
+    background: var(--ash-deep-green) !important;
+}
+
+.readmore-btn {
+    color: var(--ash-deep-green) !important;
+}
+
+.readmore-btn:hover {
+    color: var(--ash-gold) !important;
+}
+
+/* ---- Features/Approach Section ---- */
+.our-feature-royal {
+    background-color: var(--ash-warm-ivory);
+}
+
+.feature-item-royal .icon-box {
+    background: var(--ash-deep-green) !important;
+}
+
+/* ---- Qualifications Section ---- */
+.qualification-card {
+    background: var(--ash-white);
+    padding: 35px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(23, 77, 53, 0.1);
+    text-align: center;
+    transition: all 0.4s ease;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.qualification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ash-deep-green), var(--ash-gold));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.qualification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(23, 77, 53, 0.1);
+}
+
+.qualification-card:hover::before {
+    transform: scaleX(1);
+}
+
+.qualification-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--ash-deep-green), var(--ash-leaf-green));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ash-white);
+    font-size: 28px;
+}
+
+.qualification-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ash-charcoal);
+    margin-bottom: 10px;
+}
+
+.qualification-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.qualification-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--ash-gold), var(--ash-gold-light));
+    color: var(--ash-charcoal);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Appointment Section ---- */
+.book-appointment {
+    background: var(--ash-deep-green) !important;
+}
+
+.form-note {
+    margin-top: 12px;
+    color: rgba(255,255,255,0.6);
+}
+
+.form-note small {
+    font-size: 13px;
+}
+
+/* ---- FAQ Section ---- */
+.our-faqs-royal {
+    background-color: var(--ash-warm-ivory);
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--ash-deep-green) !important;
+    color: var(--ash-white) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.15rem rgba(23, 77, 53, 0.25) !important;
+}
+
+/* ---- Location Section ---- */
+.ash-location-section {
+    padding: 100px 0;
+    background: var(--ash-white);
+}
+
+.ash-location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ash-location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    background: var(--ash-warm-ivory);
+    border-radius: 12px;
+    border: 1px solid rgba(23, 77, 53, 0.08);
+    transition: all 0.3s ease;
+}
+
+.ash-location-item:hover {
+    box-shadow: 0 8px 25px rgba(23, 77, 53, 0.08);
+    transform: translateY(-3px);
+}
+
+.ash-location-item i {
+    font-size: 22px;
+    color: var(--ash-gold);
+    min-width: 30px;
+    margin-top: 3px;
+}
+
+.ash-location-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ash-charcoal);
+    margin-bottom: 5px;
+}
+
+.ash-location-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.ash-location-item p a {
+    color: var(--ash-deep-green);
+    text-decoration: none;
+}
+
+.ash-location-item p a:hover {
+    color: var(--ash-gold);
+}
+
+.ash-map-container {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 100%;
+    min-height: 400px;
+}
+
+.ash-map-container iframe {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+/* ---- Footer Overrides ---- */
+.main-footer-royal {
+    background: var(--ash-charcoal) !important;
+}
+
+.footer-social-links-royal ul li a {
+    background: var(--ash-deep-green) !important;
+}
+
+.footer-social-links-royal ul li a:hover {
+    background: var(--ash-gold) !important;
+}
+
+/* ---- Language Switcher ---- */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    color: var(--ash-gold);
+    background: rgba(197, 161, 90, 0.1);
+}
+
+.lang-divider {
+    color: rgba(255,255,255,0.3);
+    font-size: 13px;
+}
+
+.header-sticky.sticky-header .lang-btn {
+    color: var(--ash-charcoal);
+}
+
+.header-sticky.sticky-header .lang-btn:hover,
+.header-sticky.sticky-header .lang-btn.active {
+    color: var(--ash-deep-green);
+}
+
+.header-sticky.sticky-header .lang-divider {
+    color: rgba(0,0,0,0.3);
+}
+
+/* ---- Floating WhatsApp Button ---- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: auto;
+    height: 56px;
+    background: #25D366;
+    color: white !important;
+    border-radius: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 24px;
+    z-index: 9999;
+    text-decoration: none;
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
+    color: white !important;
+}
+
+.whatsapp-float i {
+    font-size: 28px;
+}
+
+.whatsapp-float-text {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+@keyframes whatsappPulse {
+    0% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7); }
+    100% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4); }
+}
+
+/* ---- Floating Call Button ---- */
+.call-float {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 52px;
+    height: 52px;
+    background: var(--ash-deep-green);
+    color: white !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(23, 77, 53, 0.4);
+    transition: all 0.3s ease;
+}
+
+.call-float:hover {
+    transform: translateY(-3px) scale(1.1);
+    background: var(--ash-leaf-green);
+    box-shadow: 0 8px 25px rgba(23, 77, 53, 0.5);
+    color: white !important;
+}
+
+.call-float i {
+    font-size: 22px;
+}
+
+/* ---- Header Button Area ---- */
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---- Highlighted Nav Menu ---- */
+.highlighted-menu .nav-link {
+    background: var(--ash-gold) !important;
+    color: var(--ash-charcoal) !important;
+    border-radius: 6px !important;
+    padding: 8px 18px !important;
+    font-weight: 600 !important;
+}
+
+.highlighted-menu .nav-link:hover {
+    background: var(--ash-gold-light) !important;
+}
+
+/* ---- Why Choose / Qualifications Light Section ---- */
+.why-choose-us-royal.light-section {
+    background: var(--ash-white);
+}
+
+/* ---- Responsive Adjustments ---- */
+@media (max-width: 991px) {
+    .lang-switcher {
+        margin: 10px 0;
+        justify-content: center;
+    }
+    
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        height: 52px;
+        padding: 0 18px;
+    }
+
+    .whatsapp-float-text {
+        display: none;
+    }
+
+    .whatsapp-float {
+        width: 52px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .call-float {
+        bottom: 85px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .ash-logo-main {
+        font-size: 26px;
+    }
+
+    .ash-logo-sub {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-content-body-royal {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .hero-content-body-royal .hero-btn-royal {
+        width: 100%;
+    }
+
+    .hero-content-body-royal .hero-btn-royal .btn-default {
+        width: 100%;
+        text-align: center;
+    }
+
+    .qualification-card {
+        padding: 25px 20px;
+    }
+
+    .ash-location-section {
+        padding: 60px 0;
+    }
+}
+
+/* ---- Smooth Scroll Behavior ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---- Selection Color ---- */
+::selection {
+    background: var(--ash-gold);
+    color: var(--ash-charcoal);
+}
+
+::-moz-selection {
+    background: var(--ash-gold);
+    color: var(--ash-charcoal);
+}
+
+/* ---- Preloader Color Override ---- */
+.preloader .loading {
+    border-color: var(--ash-gold) !important;
+}
+
+/* ---- Form Control Focus Override ---- */
+.form-control:focus {
+    border-color: var(--ash-gold) !important;
+    box-shadow: 0 0 0 0.15rem rgba(197, 161, 90, 0.25) !important;
+}
