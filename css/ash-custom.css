@@ -1087,16 +1087,27 @@ body {
 }
 
 /* ---- Mobile Slide Bar (SlickNav) Menu ---- */
+.responsive-menu {
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 .slicknav_menu {
-    background: #0d2b1d !important;
-    border-bottom: 2px solid rgba(197, 161, 90, 0.25);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-    padding: 10px 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .slicknav_nav {
+    background: #0d2b1d !important;
+    border-bottom: 2px solid rgba(197, 161, 90, 0.25) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
     margin: 0 !important;
-    padding: 8px 0 !important;
+    padding: 10px 0 16px 0 !important;
 }
 
 .slicknav_nav li {
