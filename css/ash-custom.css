@@ -1429,3 +1429,389 @@ html {
     transform: translateY(-50%) rotate(45deg) !important;
 }
 
+/* ========================================================
+   AUTHENTIC TAMIL HERITAGE & NEW REQUIREMENTS STYLES
+   ======================================================== */
+
+/* Sacred Verse Banner */
+.agasthiyar-verse-banner {
+    background: linear-gradient(135deg, rgba(23, 77, 53, 0.95), rgba(15, 53, 36, 0.98));
+    border: 2px solid var(--ash-gold);
+    border-radius: 16px;
+    padding: 24px 30px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.agasthiyar-verse-banner::before {
+    content: '🕉️';
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+}
+.agasthiyar-verse-banner .verse-text-ta {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #F8F4E8;
+    font-family: var(--ash-font-tamil), serif;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+}
+.agasthiyar-verse-banner .verse-text-en {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--ash-gold);
+    line-height: 1.6;
+    margin: 0;
+}
+.agasthiyar-verse-banner .verse-author {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    background: rgba(197, 161, 90, 0.2);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #FFE6A3;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sacred Lineage Cards */
+.guru-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(197, 161, 90, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.guru-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--ash-gold);
+    box-shadow: 0 16px 40px rgba(197, 161, 90, 0.25);
+}
+.guru-card-img-wrap {
+    height: 290px;
+    overflow: hidden;
+    background: #0f3524;
+    position: relative;
+}
+.guru-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.6s ease;
+}
+.guru-card:hover .guru-card-img-wrap img {
+    transform: scale(1.05);
+}
+.guru-card-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--ash-gold);
+    color: #174D35;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.guru-card-body {
+    padding: 22px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.guru-card-body h3 {
+    font-size: 20px;
+    color: var(--ash-deep-green);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.guru-card-body .guru-subtitle {
+    font-size: 13px;
+    color: var(--ash-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+.guru-card-body p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ASH Meaning Strip */
+.ash-meaning-strip {
+    background: linear-gradient(90deg, #174D35 0%, #206346 50%, #174D35 100%);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 35px 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid var(--ash-gold);
+}
+.ash-letter-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.ash-letter-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--ash-gold);
+    color: #174D35;
+    font-size: 22px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.ash-letter-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.ash-letter-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #E2D7BE;
+}
+
+/* Product Cards */
+.product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(23,77,53,0.12);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: all 0.35s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(23,77,53,0.12);
+    border-color: var(--ash-gold);
+}
+.product-img-wrap {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    background: #F4EFE6;
+}
+.product-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.product-card:hover .product-img-wrap img {
+    transform: scale(1.06);
+}
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--ash-deep-green);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.product-badge.gold {
+    background: var(--ash-gold);
+    color: #174D35;
+}
+.product-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.product-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ash-charcoal);
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+.product-tamil-name {
+    font-size: 13.5px;
+    color: var(--ash-leaf-green);
+    font-family: var(--ash-font-tamil), sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.product-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+.product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+.product-tag {
+    font-size: 11px;
+    background: rgba(23,77,53,0.06);
+    color: var(--ash-deep-green);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+.product-order-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #25D366;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+.product-order-btn:hover {
+    background: #1eb855;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
+/* Training Classes Cards */
+.class-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(197, 161, 90, 0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease;
+}
+.class-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--ash-gold);
+    box-shadow: 0 16px 35px rgba(197, 161, 90, 0.2);
+}
+.class-header {
+    background: linear-gradient(135deg, #174D35, #246848);
+    color: #fff;
+    padding: 22px;
+    position: relative;
+}
+.class-duration-badge {
+    display: inline-block;
+    background: var(--ash-gold);
+    color: #174D35;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.class-header h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.class-header .class-tamil-title {
+    color: #FFE6A3;
+    font-size: 14px;
+    font-family: var(--ash-font-tamil);
+    margin: 0;
+}
+.class-body {
+    padding: 22px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.class-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.class-body ul li {
+    font-size: 13.5px;
+    color: #555;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px dashed rgba(0,0,0,0.07);
+}
+.class-body ul li i {
+    color: var(--ash-gold);
+    font-size: 14px;
+}
+
+/* Video Player Box */
+.healing-video-box {
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 2px solid var(--ash-gold);
+}
+.healing-video-box video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+/* Tarot Reader Card */
+.tarot-hero-card {
+    background: linear-gradient(135deg, #2A174D 0%, #174D35 100%);
+    border-radius: 20px;
+    color: #fff;
+    padding: 35px;
+    border: 2px solid var(--ash-gold);
+    box-shadow: 0 15px 40px rgba(42, 23, 77, 0.3);
+}
+
+
