@@ -17,6 +17,7 @@
                 var nameInput = currentForm.querySelector('#apt-name, input[name="name"], #fname');
                 var phoneInput = currentForm.querySelector('#apt-phone, input[name="phone"]');
                 var serviceInput = currentForm.querySelector('#apt-service, select[name="service"]');
+                var modeInput = currentForm.querySelector('#apt-mode, select[name="mode"]');
                 var dateInput = currentForm.querySelector('#apt-date, input[name="date"]');
                 var timeInput = currentForm.querySelector('#apt-time, select[name="time"], input[name="time"]');
                 var messageInput = currentForm.querySelector('#apt-message, textarea[name="message"], #message');
@@ -24,6 +25,7 @@
                 var name = nameInput ? nameInput.value.trim() : '';
                 var phone = phoneInput ? phoneInput.value.trim() : '';
                 var service = serviceInput ? serviceInput.value : '';
+                var mode = modeInput ? modeInput.value : '';
                 var date = dateInput ? dateInput.value : '';
                 var time = timeInput ? timeInput.value : '';
                 var message = messageInput ? messageInput.value.trim() : '';
@@ -48,6 +50,7 @@
                 waMessage += '*Name:* ' + name + '\n';
                 waMessage += '*Phone:* ' + phone + '\n';
                 if (service) waMessage += '*Service:* ' + service + '\n';
+                if (mode) waMessage += '*Consultation Mode:* ' + mode + '\n';
                 if (date) waMessage += '*Preferred Date:* ' + date + '\n';
                 if (time) waMessage += '*Preferred Time:* ' + time + '\n';
                 if (message) waMessage += '*Message:* ' + message + '\n';
